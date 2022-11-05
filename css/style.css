@@ -277,7 +277,7 @@ section{
 
 .newsletter{
     padding:6rem 2rem;
-    background: url("image/newsletter.png") no-repeat;
+    background: url("/image/subscribe.png") no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;  
