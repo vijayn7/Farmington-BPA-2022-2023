@@ -87,6 +87,12 @@ let submitButton = document.getElementById("calculate");
 submitButton.addEventListener("click", calcualteLoan);
 
 function calcualteLoan() {
+
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  });
+
   var amount = document.getElementById("amount").value;
   var term = document.getElementById("term").value;
   var rate = document.getElementById("rate").value / 100;
@@ -97,9 +103,9 @@ function calcualteLoan() {
   var totalLoanIntrest = amount * rate * (term / 12);
   var total = amount*1 + totalLoanIntrest*1;
 
-  document.getElementById("monthly").value = total / term;
-  document.getElementById("totalLoanAmount").value = amount;
-  document.getElementById("upfront").value = downPayment*1 + salesTax*1;
-  document.getElementById("totalLoanIntrest").value = totalLoanIntrest;
-  document.getElementById("totalCost").value = total*1 + downPayment*1 + salesTax*1;
+  document.getElementById("monthly").value = formatter.format(total / term);
+  document.getElementById("totalLoanAmount").value = formatter.format(amount);
+  document.getElementById("upfront").value = formatter.format(downPayment*1 + salesTax*1);
+  document.getElementById("totalLoanIntrest").value = formatter.format(totalLoanIntrest);
+  document.getElementById("totalCost").value = formatter.format(total*1 + downPayment*1 + salesTax*1);
 }
