@@ -433,6 +433,65 @@ section{
     font-size: 1.7rem;
 }
 
+.listings {
+    background: #eee;
+    padding-bottom: 5rem;
+}
+
+.listings .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:4.5rem;
+}
+
+.listings .box{
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 5rem;
+    margin: auto;
+}
+
+.listings .box img{
+    width:100%;
+    transform: scale(.8);
+}
+
+.listings .box .content{
+    padding-top: 1rem;
+}
+
+.listings .box .content h3{
+    font-size: 2.5rem;
+    color:var(--black);
+}
+
+.listings .box .content .price{
+    font-size: 2.2rem;
+    color:var(--yellow);
+    padding:1rem 0;
+    font-weight: bolder;
+}
+
+.listings .box .content .price span{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.listings .box .content p{
+    font-size: 1.6rem;
+    color:var(--light-color);
+    padding: 1rem 0;
+    padding-top: 1.5rem;
+    border-top: var(--border);
+}
+
+.listings .box .content span{
+    font-size: 1rem;
+    color:var(--yellow);
+    padding:0 .5rem;
+}
+
 .contact .row{
     display: flex;
     flex-wrap: wrap;
@@ -509,16 +568,6 @@ section{
 
 .footer .box-container .box a:hover i{
     padding-right: 2rem;
-}
-
-.footer .credit{
-    text-align: center;
-    padding:1.5rem;
-    padding-top: 2.5rem;
-    margin-top: 2rem;
-    border-top: var(--border);
-    font-size: 2rem;
-    color:var(--black);
 }
 
 @media (max-width:991px){
