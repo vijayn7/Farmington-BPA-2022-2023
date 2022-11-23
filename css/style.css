@@ -441,7 +441,8 @@ section{
 .listings .row{
     display: flex;
     flex-wrap: wrap;
-    gap:4.5rem;
+    gap:6rem;
+    width: 100%;
 }
 
 .listings .box{
@@ -449,10 +450,11 @@ section{
     text-align: center;
     padding-bottom: 5rem;
     margin: auto;
+    width: 30%;
 }
 
 .listings .box img{
-    width:100%;
+    width:75%;
     transform: scale(.8);
 }
 
@@ -496,6 +498,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
+    padding-bottom: 4rem;
 }
 
 .contact .row .map{
@@ -570,6 +573,18 @@ section{
     padding-right: 2rem;
 }
 
+@media (max-width:1464px) {
+    .listings .box{
+        width: 45%;
+    }
+}
+
+@media (max-width:1200px) {
+    .listings .box{
+        width: 80%;
+    }
+}
+
 @media (max-width:991px){
 
     html{
@@ -586,6 +601,10 @@ section{
 
     section{
         padding:2rem;
+    }
+
+    .listings .box{
+        width: 70%;
     }
 
 }
@@ -626,6 +645,9 @@ section{
         font-size: 2rem;
     }
 
+    .listings .box{
+        width: 90%;
+    }
 }
 
 @media (max-width:450px){
@@ -636,6 +658,10 @@ section{
 
     .heading{
         font-size: 3rem;
+    }
+
+    .listings .box{
+        width: 90%;
     }
 
 }
