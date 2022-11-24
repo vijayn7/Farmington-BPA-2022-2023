@@ -52,24 +52,62 @@
 
 <section class="loan" id="loan" style="margin-top: 100px;">
     <div class="row">
-            <form action="">
-                <h3 class="formHeader">Pick your Style:</h3>
-                <label>Drive type:</label>
-                <select name="driveType" id="driveType">
-                    <option value="none selected">Choose a Drive Type</option>
-                    <option value="awd">All Wheel Drive</option>
-                    <option value="fwd">Front Wheel Drive</option>
-                    <option value="rwd">Rear Wheel Drive</option>
-                </select>
-            </form>
-        </div>
-    </section>
+        <div id="filters">
+            <div data-toggle="buttons">
+
+              <label class="btn active">
+                <input type="radio" name="difficulty" value="all" checked>
+                Show all
+              </label>
+
+              <label class="btn">
+                <input type="radio" name="difficulty" value="red">
+                Red
+              </label>
+
+              <label class="btn">
+                <input type="radio" name="difficulty" value="mid">
+                Mid
+              </label>
+
+              <label class="btn">
+                <input type="radio" name="difficulty" value="advanced">
+                Advanced
+              </label>
+
+            </div>
+
+            <div data-toggle="buttons">
+              <label class="btn active">
+                <input type="radio" name="target" value="all" checked>
+                Show all
+              </label>
+              <label class="btn">
+                <input type="radio" name="target" value="lower-body">
+                Lower Body
+              </label>
+              <label class="btn">
+                <input type="radio" name="target" value="upper-body">
+                Upper Body
+              </label>
+              <label class="btn">
+                <input type="radio" name="target" value="core">
+                Core
+              </label>
+              <label class="btn">
+                <input type="radio" name="target" value="stretch">
+                Stretch
+              </label>
+            </div>
+          </div>
+    </div>
+</section>
 
 <section class="listings" id="listings">
 
     <div class="row">
 
-        <div class="box">
+        <div class="box column red">
             <img src="image/vehicle-1.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -85,87 +123,11 @@
             </div>
         </div>  
 
-        <div class="box">
-            <img src="image/vehicle-2.png" alt="">
-            <div class="content">
-                <h3>new model</h3>
-                <div class="price"> <span>price : </span> $62,000/- </div>
-                <p>
-                    New -
-                    2021 -
-                    Automatic -
-                    petrol -
-                    183mph
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/vehicle-3.png" alt="">
-            <div class="content">
-                <h3>new model</h3>
-                <div class="price"> <span>price : </span> $62,000/- </div>
-                <p>
-                    New -
-                    2021 -
-                    Automatic -
-                    petrol -
-                    183mph
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="image/vehicle-4.png" alt="">
-            <div class="content">
-                <h3>new model</h3>
-                <div class="price"> <span>price : </span> $62,000/- </div>
-                <p>
-                    New -
-                    2021 -
-                    Automatic -
-                    petrol -
-                    183mph
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/vehicle-5.png" alt="">
-            <div class="content">
-                <h3>new model</h3>
-                <div class="price"> <span>price : </span> $62,000/- </div>
-                <p>
-                    New -
-                    2021 -
-                    Automatic -
-                    petrol -
-                    183mph
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/vehicle-6.png" alt="">
-            <div class="content">
-                <h3>new model</h3>
-                <div class="price"> <span>price : </span> $62,000/- </div>
-                <p>
-                    New -
-                    2021 -
-                    Automatic -
-                    petrol -
-                    183mph
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
     </div>
+
 </section>
 
+<script src="js/filter.js"></script>
 <script src="js/script.js"></script>
 
 </body>
