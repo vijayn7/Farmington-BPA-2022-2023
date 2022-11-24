@@ -550,6 +550,10 @@ section{
     gap:1.5rem;
 }
 
+.footer .box-container .box {
+    text-align: center;
+}
+
 .footer .box-container .box h3{
     font-size: 2.2rem;
     padding:1rem 0;
