@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Explore</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Explore</title>
+</head>
+
 <body>
 
 <header class="header">
@@ -50,34 +52,50 @@
 
 </div>
 
-<section class="loan" id="loan" style="margin-top: 100px;">
+<section class="selection" id="selection" style="margin-top: 100px;">
     <div class="row">
         <div id="filters">
+            <h3>Color:</h3>
             <div data-toggle="buttons">
 
-              <label class="btn active">
-                <input type="radio" name="difficulty" value="all" checked>
+              <label  style="background: #35605A;" id="colorAll" class="btn active">
+                <input type="radio" name="color" value="all" onclick="color('colorAll')">
                 Show all
               </label>
 
-              <label class="btn">
-                <input type="radio" name="difficulty" value="red">
+              <label id="redOption" class="btn">
+                <input type="radio" name="color" value="red" onclick="color('redOption')">
                 Red
               </label>
 
-              <label class="btn">
-                <input type="radio" name="difficulty" value="mid">
-                Mid
+              <label id="whiteOption" class="btn">
+                <input type="radio" name="color" value="white" onclick="color('whiteOption')">
+                White
               </label>
 
-              <label class="btn">
-                <input type="radio" name="difficulty" value="advanced">
-                Advanced
+              <label id="blueOption" class="btn">
+                <input type="radio" name="color" value="blue" onclick="color('blueOption')">
+                Blue
+              </label>
+
+              <label id="orangeOption" class="btn">
+                <input type="radio" name="color" value="orange" onclick="color('orangeOption')">
+                Orange
+              </label>
+
+              <label id="grayOption" class="btn">
+                <input type="radio" name="color" value="gray" onclick="color('grayOption')">
+                Gray
+              </label>
+
+              <label id="blackOption" class="btn">
+                <input type="radio" name="color" value="black" onclick="color('blackOption')">
+                Black
               </label>
 
             </div>
 
-            <div data-toggle="buttons">
+            <!-- <div data-toggle="buttons">
               <label class="btn active">
                 <input type="radio" name="target" value="all" checked>
                 Show all
@@ -98,7 +116,7 @@
                 <input type="radio" name="target" value="stretch">
                 Stretch
               </label>
-            </div>
+            </div> -->
           </div>
     </div>
 </section>
@@ -108,7 +126,7 @@
     <div class="row">
 
         <div class="box column red">
-            <img src="image/vehicle-1.png" alt="">
+            <img src="image/cars/1.png" alt="">
             <div class="content">
                 <h3>new model</h3>
                 <div class="price"> <span>price : </span> $62,000/- </div>
@@ -119,7 +137,161 @@
                 </p>
                 <a href="#" class="btn">check out</a>
             </div>
-        </div>  
+        </div>
+
+        <div class="box column gray">
+            <img src="image/cars/2.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column white">
+            <img src="image/cars/3.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column blue">
+            <img src="image/cars/4.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column orange">
+            <img src="image/cars/5.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column blue">
+            <img src="image/cars/6.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column white">
+            <img src="image/cars/7.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column gray">
+            <img src="image/cars/8.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column blue">
+            <img src="image/cars/9.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column black">
+            <img src="image/cars/10.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column blue">
+            <img src="image/cars/11.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column gray">
+            <img src="image/cars/12.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
 
     </div>
 
@@ -127,6 +299,18 @@
 
 <script src="js/filter.js"></script>
 <script src="js/script.js"></script>
+
+<script>
+    function color(id) {
+        let green = "#002517";
+        let slate = "#35605A";
+        const classes = ["colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption"]
+        for (let i = 0; i < classes.length; i++) {
+            document.getElementById(classes[i]).style.background = green;
+        }
+        document.getElementById(id).style.background = slate;
+    }
+</script>
 
 </body>
 </html>

@@ -432,6 +432,29 @@ section{
     font-size: 1.7rem;
 }
 
+.selection {
+    background: #eee;
+}
+
+.selection .row{
+    border-radius: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    background-color: #fff;
+}
+
+.selection .row h3{
+    font-size: 3rem;
+    color:var(--green);
+    padding-bottom: 1rem;
+}
+
+.selection #filters input {
+    display: none;
+  }
+
 .listings {
     background: #eee;
     padding-bottom: 5rem;
