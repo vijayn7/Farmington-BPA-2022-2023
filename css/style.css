@@ -4,6 +4,7 @@
     --slate:#35605A;
     --green:#002517;
     --light-color:#666;
+    --yellow: #E88321;
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
     --border:.1rem solid rgba(0,0,0,.1);
 }
@@ -428,7 +429,7 @@ section{
 }
 
 .reviews .review-slider .box .content .stars i{
-    color:var(--slate);
+    color:var(--yellow);
     font-size: 1.7rem;
 }
 
