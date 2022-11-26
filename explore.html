@@ -93,6 +93,11 @@
                 Black
               </label>
 
+              <label id="yellowOption" class="btn">
+                <input type="radio" name="color" value="yellow" onclick="color('yellowOption')">
+                yellow
+              </label>
+
             </div>
 
             <!-- <div data-toggle="buttons">
@@ -293,6 +298,90 @@
             </div>
         </div>
 
+        <div class="box column black">
+            <img src="image/cars/13.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column yellow">
+            <img src="image/cars/14.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column white">
+            <img src="image/cars/15.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column red">
+            <img src="image/cars/16.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column gray">
+            <img src="image/cars/17.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="box column white">
+            <img src="image/cars/18.png" alt="">
+            <div class="content">
+                <h3>new model</h3>
+                <div class="price"> <span>price : </span> $62,000/- </div>
+                <p>
+                    2021 -
+                    Automatic -
+                    60k miles
+                </p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
     </div>
 
 </section>
@@ -304,7 +393,7 @@
     function color(id) {
         let green = "#002517";
         let slate = "#35605A";
-        const classes = ["colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption"]
+        const classes = ["colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption"]
         for (let i = 0; i < classes.length; i++) {
             document.getElementById(classes[i]).style.background = green;
         }
