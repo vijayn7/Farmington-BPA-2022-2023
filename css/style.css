@@ -222,7 +222,7 @@ section{
 .newsletter{
     padding:6rem 2rem;
     background: url("/image/subscribe.png") no-repeat;
-    background: url("https://www.simpleimageresizer.com/_uploads/photos/e4acba72/subscribe_99.png") no-repeat;
+   
     background-size: cover;
     background-position: center;
     background-attachment: fixed;  
