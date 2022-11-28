@@ -474,7 +474,11 @@ section{
 
 .selection #filters input {
     display: none;
-  }
+}
+
+.selection .row #filters div {
+    padding-bottom: 2rem;
+}
 
 .listings {
     background: #eee;
