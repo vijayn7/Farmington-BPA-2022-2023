@@ -240,8 +240,8 @@ section{
 
 .newsletter{
     padding:6rem 2rem;
+    background: url("https://imgs.search.brave.com/RNiz0SS6--hR7hxv84gJg01KHLiUQ_BTk45Xtx5kW4c/rs:fit:700:233:1/g:ce/aHR0cDovL2Nkbi53/YWxscGFwZXJzYWZh/cmkuY29tLzk1LzEv/alBBdFE4LmpwZw") no-repeat;
     background: url("/image/subscribe.png") no-repeat;
-    
     background-size: cover;
     background-position: center;
     background-attachment: fixed;  
