@@ -19,7 +19,7 @@
 <header class="header">
     <div id="menu-btn" class="fas fa-bars"></div>
 
-    <a href="#" class="logo" ><img src="image/Circle Education Badge Logo (2).png" alt="AutoWizard Logo" style="float: right;  padding-left: 10px; padding-bottom: 3px; width: 43px;height:35px;">AutoWizard</a>
+    <a href="#" class="logo" ><img src="image/logo.png" alt="AutoWizard Logo" style="float: right;  padding-left: 10px; padding-bottom: 3px; width: 43px;height:35px;">AutoWizard</a>
 
     <nav class="navbar">
         <a href="index.html#home">home</a>
@@ -105,28 +105,45 @@
 
             </div>
 
-            <!-- <div data-toggle="buttons">
-              <label class="btn active">
-                <input type="radio" name="target" value="all" checked>
-                Show all
-              </label>
-              <label class="btn">
-                <input type="radio" name="target" value="lower-body">
-                Lower Body
-              </label>
-              <label class="btn">
-                <input type="radio" name="target" value="upper-body">
-                Upper Body
-              </label>
-              <label class="btn">
-                <input type="radio" name="target" value="core">
-                Core
-              </label>
-              <label class="btn">
-                <input type="radio" name="target" value="stretch">
-                Stretch
-              </label>
-            </div> -->
+            <h3>Type:</h3>
+            <div data-toggle="buttons">
+
+                <label id="typeAll" class="btn active" id="typeAll" style="background-color: #35605A;">
+                  <input type="radio" name="color" value="all" onclick="carType('typeAll')">
+                  Show all
+                </label>
+  
+                <label id="sportsCarOption" class="btn">
+                  <input type="radio" name="color" value="sportsCar" onclick="carType('sportsCarOption')">
+                  Sports Cars
+                </label>
+  
+                <label id="carOption" class="btn">
+                  <input type="radio" name="color" value="car" onclick="carType('carOption')">
+                  Cars
+                </label>
+  
+                <label id="crossoverOption" class="btn">
+                  <input type="radio" name="color" value="crossover" onclick="carType('crossoverOption')">
+                  Crossovers
+                </label>
+  
+                <label id="truckOption" class="btn">
+                  <input type="radio" name="color" value="truck" onclick="carType('truckOption')">
+                  Trucks
+                </label>
+  
+                <label id="convertibleOption" class="btn">
+                  <input type="radio" name="color" value="convertible" onclick="carType('convertibleOption')">
+                  Convertibles
+                </label>
+  
+                <label id="otherOption" class="btn">
+                  <input type="radio" name="color" value="other" onclick="carType('otherOption')">
+                  Other
+                </label>
+  
+            </div>
           </div>
     </div>
 </section>
@@ -135,7 +152,7 @@
 
     <div class="row">
 
-        <div class="box column red">
+        <div class="box column red crossover">
             <img src="image/cars/1.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -149,7 +166,7 @@
             </div>
         </div>
 
-        <div class="box column gray">
+        <div class="box column gray car">
             <img src="image/cars/2.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -163,7 +180,7 @@
             </div>
         </div>
 
-        <div class="box column white">
+        <div class="box column white crossover">
             <img src="image/cars/3.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -177,7 +194,7 @@
             </div>
         </div>
 
-        <div class="box column blue">
+        <div class="box column blue convertible">
             <img src="image/cars/4.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -191,7 +208,7 @@
             </div>
         </div>
 
-        <div class="box column orange">
+        <div class="box column orange car">
             <img src="image/cars/5.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -205,7 +222,7 @@
             </div>
         </div>
 
-        <div class="box column blue">
+        <div class="box column blue crossover">
             <img src="image/cars/6.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -219,7 +236,7 @@
             </div>
         </div>
 
-        <div class="box column white">
+        <div class="box column white crossover">
             <img src="image/cars/7.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -233,7 +250,7 @@
             </div>
         </div>
 
-        <div class="box column gray">
+        <div class="box column gray sportsCar">
             <img src="image/cars/8.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -247,7 +264,7 @@
             </div>
         </div>
 
-        <div class="box column blue">
+        <div class="box column blue crossover">
             <img src="image/cars/9.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -261,7 +278,7 @@
             </div>
         </div>
 
-        <div class="box column black">
+        <div class="box column black sportsCar convertible">
             <img src="image/cars/10.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -275,7 +292,7 @@
             </div>
         </div>
 
-        <div class="box column blue">
+        <div class="box column blue car">
             <img src="image/cars/11.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -289,7 +306,7 @@
             </div>
         </div>
 
-        <div class="box column gray">
+        <div class="box column gray crossover">
             <img src="image/cars/12.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -303,7 +320,7 @@
             </div>
         </div>
 
-        <div class="box column black">
+        <div class="box column black other crossover">
             <img src="image/cars/13.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -317,7 +334,7 @@
             </div>
         </div>
 
-        <div class="box column yellow">
+        <div class="box column yellow sportsCar">
             <img src="image/cars/14.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -331,7 +348,7 @@
             </div>
         </div>
 
-        <div class="box column white">
+        <div class="box column white sportsCar">
             <img src="image/cars/15.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -345,7 +362,7 @@
             </div>
         </div>
 
-        <div class="box column red">
+        <div class="box column red other truck">
             <img src="image/cars/16.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -359,7 +376,7 @@
             </div>
         </div>
 
-        <div class="box column gray">
+        <div class="box column gray car sportsCar">
             <img src="image/cars/17.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -373,7 +390,7 @@
             </div>
         </div>
 
-        <div class="box column white">
+        <div class="box column white truck">
             <img src="image/cars/18.png" alt="">
             <div class="content">
                 <h3>new model</h3>
@@ -396,10 +413,20 @@
 <script src="js/backToTop.js"></script>
 
 <script>
+    function carType(id) {
+        let green = "#002517";
+        let slate = "#35605A";
+        const classes = ["typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption"];
+        for (let i = 0; i < classes.length; i++) {
+            document.getElementById(classes[i]).style.background = green;
+        }
+        document.getElementById(id).style.background = slate;
+    }
+
     function color(id) {
         let green = "#002517";
         let slate = "#35605A";
-        const classes = ["colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption"]
+        const classes = ["colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption"];
         for (let i = 0; i < classes.length; i++) {
             document.getElementById(classes[i]).style.background = green;
         }
