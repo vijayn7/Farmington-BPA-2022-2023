@@ -55,6 +55,33 @@ var swiper = new Swiper(".vehicles-slider", {
   },
 });
 
+// Swiper: about us
+var swiper = new Swiper(".about-us-slider", {
+  grabCursor: true,
+  centeredSlides: true,  
+  spaceBetween: 20,
+  loop:true,
+  autoplay: {
+    delay: 7000,
+    disableOnInteraction: false,
+  },
+  
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+
+
+
 //Swiper: Reviews
 var swiper = new Swiper(".review-slider", {
   grabCursor: true,

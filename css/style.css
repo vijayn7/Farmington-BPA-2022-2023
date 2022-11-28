@@ -537,6 +537,65 @@ section{
     padding:0 .5rem;
 }
 
+.about-us {
+    padding-top: 15rem;
+}
+
+.about-us h1{
+font-size: 7rem;
+}
+
+.about-us .about-us-slider{
+    padding-bottom: 15rem;
+    padding-top: 3rem;
+}
+
+.about-us .about-us-slider .box{
+    text-align: center;
+    padding:2rem;
+    margin: 2rem 0;
+    opacity: .4;
+    transform: scale(.9);
+}
+
+.about-us .about-us-slider .swiper-slide-active{
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    border-radius: .5rem;
+}
+
+.about-us span{
+    color:var(--green);
+    font-size: 4.5rem;
+    padding-bottom: .5rem;
+}
+
+.about-us .about-us-slider .box img{
+    height: 40rem;
+    width:40rem;
+    border-radius: 40%;
+    object-fit: cover;
+    
+    border: .3rem solid #35605A ;
+    
+}
+
+.about-us .about-us-slider .box .content p{
+    padding-top: 1rem;
+    color:var(--light-color);
+    font-size: 1.4rem;
+    padding:rem 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
 .contact .row{
     display: flex;
     flex-wrap: wrap;
