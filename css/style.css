@@ -71,7 +71,6 @@ section{
 }
 
 #backToTopButton {
-    /* display: none; */
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -542,10 +541,18 @@ section{
 }
 
 .about-us {
+    background-color: #eee;
     padding-top: 15rem;
+    background: url("/image/subscribe.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  
+    min-height: 20vh;
+    text-align: center;
 }
 
 .about-us h1{
+    color: white;
 font-size: 7rem;
 }
 
@@ -555,10 +562,11 @@ font-size: 7rem;
 }
 
 .about-us .about-us-slider .box{
+    background-color: #fff;
     text-align: center;
     padding:2rem;
     margin: 2rem 0;
-    opacity: .4;
+    opacity: .9;
     transform: scale(.9);
 }
 
@@ -581,7 +589,6 @@ font-size: 7rem;
     width:40rem;
     border-radius: 40%;
     object-fit: cover;
-    
     border: .3rem solid #35605A ;
     
 }
@@ -593,12 +600,6 @@ font-size: 7rem;
     padding:rem 0;
     text-align: center;
 }
-
-
-
-
-
-
 
 .contact .row{
     display: flex;
