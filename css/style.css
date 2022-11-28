@@ -70,6 +70,26 @@ section{
     background:var(--slate);
 }
 
+#backToTopButton {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    color: white;
+    background-color: var(--slate);
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border-radius: 15rem;
+}
+
+#backToTopButton:hover{
+    background-color: var(--yellow);
+}
+
 .header{
     display: flex;
     align-items: center;
@@ -222,7 +242,6 @@ section{
 .newsletter{
     padding:6rem 2rem;
     background: url("/image/subscribe.png") no-repeat;
-    background: url("https://www.simpleimageresizer.com/_uploads/photos/e4acba72/subscribe_99.png") no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;  
