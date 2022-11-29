@@ -613,6 +613,17 @@ section{
     padding-bottom: 4rem;
 }
 
+.contact .hoursHeading{
+    font-size: 2rem;
+}
+
+.contact p {
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color:var(--green);
+}
+
 .contact .row .map{
     flex:1 1 42rem;
     width: 100%;
