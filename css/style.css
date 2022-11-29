@@ -553,7 +553,12 @@ section{
 
 .about-us h1{
     color: white;
-font-size: 7rem;
+    font-size: 7rem;
+}
+
+.about-us p {
+    color: #fff;
+    font-size: 2rem;
 }
 
 .about-us .about-us-slider{
