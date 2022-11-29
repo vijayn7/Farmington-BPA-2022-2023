@@ -684,9 +684,27 @@ font-size: 7rem;
     padding-right: 2rem;
 }
 
+@media (max-width:2000px) {
+    .about-us .about-us-slider .box img{
+        height:30rem;
+        width:80%;
+    }
+}
+
 @media (max-width:1464px) {
     .listings .box{
         width: 45%;
+    }
+
+    .about-us span{
+        color:var(--green);
+        font-size: 3rem;
+        padding-bottom: .5rem;
+    }
+
+    .about-us .about-us-slider .box img{
+        height:20rem;
+        width:80%;
     }
 }
 
@@ -694,6 +712,22 @@ font-size: 7rem;
     .listings .box{
         width: 80%;
     }
+
+    .about-us span{
+        color:var(--green);
+        font-size: 3rem;
+        padding-bottom: .5rem;
+    }
+
+    .about-us .about-us-slider .box img{
+        height:20rem;
+        width:70%;
+    }
+
+    #aidenname {
+        font-size: 3.5rem;
+    }
+
 }
 
 @media (max-width:991px){
@@ -716,6 +750,10 @@ font-size: 7rem;
 
     .listings .box{
         width: 70%;
+    }
+
+    .about-us .about-us-slider .box img{
+        height:30rem;
     }
 
 }
@@ -759,6 +797,11 @@ font-size: 7rem;
     .listings .box{
         width: 90%;
     }
+
+    .about-us .about-us-slider .box img{
+        height:60%;
+    }
+
 }
 
 @media (max-width:450px){
@@ -775,4 +818,7 @@ font-size: 7rem;
         width: 90%;
     }
 
+    .about-us .about-us-slider .box img{
+        height:30rem;
+    }
 }
