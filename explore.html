@@ -449,21 +449,23 @@
     function carType(id) {
         let green = "#002517";
         let slate = "#35605A";
-        const classes = ["typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption"];
+        const classes = ["typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption", "colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption"];
         for (let i = 0; i < classes.length; i++) {
             document.getElementById(classes[i]).style.background = green;
         }
         document.getElementById(id).style.background = slate;
+        document.getElementById('colorAll').style.background = slate;
     }
 
     function color(id) {
         let green = "#002517";
         let slate = "#35605A";
-        const classes = ["colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption"];
+        const classes = ["colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption", "typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption"];
         for (let i = 0; i < classes.length; i++) {
             document.getElementById(classes[i]).style.background = green;
         }
         document.getElementById(id).style.background = slate;
+        document.getElementById('typeAll').style.background = slate;
     }
 </script>
 
