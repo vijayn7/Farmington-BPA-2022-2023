@@ -557,7 +557,7 @@ section{
 }
 
 .about-us p {
-    color: #fff;
+    color: var(--green);
     font-size: 2rem;
 }
 
@@ -596,14 +596,6 @@ section{
     object-fit: cover;
     border: .3rem solid #35605A ;
     
-}
-
-.about-us .about-us-slider .box .content p{
-    padding-top: 1rem;
-    color:var(--light-color);
-    font-size: 1.4rem;
-    padding:rem 0;
-    text-align: center;
 }
 
 .contact .row{
@@ -698,6 +690,16 @@ section{
 
 .footer .box-container .box a:hover i{
     padding-right: 2rem;
+}
+
+.footer .credit{
+    text-align: center;
+    padding:1.5rem;
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+    border-top: var(--border);
+    font-size: 2rem;
+    color:#9c9c9c;
 }
 
 @media (max-width:2000px) {
