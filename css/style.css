@@ -553,7 +553,12 @@ section{
 
 .about-us h1{
     color: white;
-font-size: 7rem;
+    font-size: 7rem;
+}
+
+.about-us p {
+    color: var(--green);
+    font-size: 2rem;
 }
 
 .about-us .about-us-slider{
@@ -593,19 +598,22 @@ font-size: 7rem;
     
 }
 
-.about-us .about-us-slider .box .content p{
-    padding-top: 1rem;
-    color:var(--light-color);
-    font-size: 1.4rem;
-    padding:rem 0;
-    text-align: center;
-}
-
 .contact .row{
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
     padding-bottom: 4rem;
+}
+
+.contact .hoursHeading{
+    font-size: 2rem;
+}
+
+.contact p {
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color:var(--green);
 }
 
 .contact .row .map{
@@ -682,6 +690,16 @@ font-size: 7rem;
 
 .footer .box-container .box a:hover i{
     padding-right: 2rem;
+}
+
+.footer .credit{
+    text-align: center;
+    padding:1.5rem;
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+    border-top: var(--border);
+    font-size: 2rem;
+    color:#9c9c9c;
 }
 
 @media (max-width:2000px) {
