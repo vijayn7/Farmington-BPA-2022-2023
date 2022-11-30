@@ -636,13 +636,20 @@ section{
     padding-bottom: .5rem;
 }
 
+.about-us .about-us-slider .box p {
+    padding-bottom: 1rem;
+}
+
+.about-us .about-us-slider .box .firstElement {
+    padding-top: 1rem;
+}
+
 .about-us .about-us-slider .box img{
     height: 40rem;
     width:40rem;
     border-radius: 40%;
     object-fit: cover;
     border: .3rem solid #002517 ;
-    
 }
 
 .contact .row{
@@ -751,7 +758,7 @@ section{
 
 @media (max-width:2000px) {
     .about-us .about-us-slider .box img{
-        height:30rem;
+        height:35rem;
         width:80%;
     }
 }
@@ -768,7 +775,7 @@ section{
     }
 
     .about-us .about-us-slider .box img{
-        height:20rem;
+        height:30rem;
         width:80%;
     }
 }
