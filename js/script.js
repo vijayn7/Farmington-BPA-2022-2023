@@ -55,8 +55,8 @@ var swiper = new Swiper(".vehicles-slider", {
   },
 });
 
-// Swiper: about us
-var swiper = new Swiper(".about-us-slider", {
+// Swiper: Sales Reprresentatives
+var swiper = new Swiper(".representatives-slider", {
   grabCursor: true,
   centeredSlides: true,  
   spaceBetween: 0,

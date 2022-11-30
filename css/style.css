@@ -583,7 +583,7 @@ section{
     padding:0 .5rem;
 }
 
-.about-us {
+.representatives {
     background-color: #eee;
     padding-top: 15rem;
     background: url("/image/subscribe.png");
@@ -594,33 +594,33 @@ section{
     text-align: center;
 }
 
-.about-us h1{
+.representatives h1{
     color:#ffffff;
     font-size: 7rem;
 }
 
-.about-us p {
+.representatives p {
     color: black;
     font-size: 2rem;
 }
 
-.about-us .about-us-slider{
+.representatives .representatives-slider{
     padding-bottom: 15rem;
     padding-top: 3rem;
    
 }
 
-.about-us .about-us-slider .box{
+.representatives .representatives-slider .box{
     background-color: #fff;
     text-align: center;
     padding:2rem;
     margin: 2rem 0;
    opacity: .8;
     transform: scale(.9);
-   filter: blur(4px);
+   filter: blur(2px);
 }
 
-.about-us .about-us-slider .swiper-slide-active{
+.representatives .representatives-slider .swiper-slide-active{
     opacity: 1;
     filter: blur(0);
     transform: scale(1);
@@ -630,21 +630,21 @@ section{
     
 }
 
-.about-us span{
+.representatives span{
     color:#002517;
     font-size: 4.5rem;
     padding-bottom: .5rem;
 }
 
-.about-us .about-us-slider .box p {
+.representatives .representatives-slider .box p {
     padding-bottom: 1rem;
 }
 
-.about-us .about-us-slider .box .firstElement {
+.representatives .representatives-slider .box .firstElement {
     padding-top: 1rem;
 }
 
-.about-us .about-us-slider .box img{
+.representatives .representatives-slider .box img{
     height: 40rem;
     width:40rem;
     border-radius: 40%;
@@ -757,7 +757,7 @@ section{
 }
 
 @media (max-width:2000px) {
-    .about-us .about-us-slider .box img{
+    .representatives .representatives-slider .box img{
         height:35rem;
         width:80%;
     }
@@ -768,13 +768,13 @@ section{
         width: 45%;
     }
 
-    .about-us span{
+    .representatives span{
         color:var(--green);
         font-size: 3rem;
         padding-bottom: .5rem;
     }
 
-    .about-us .about-us-slider .box img{
+    .representatives .representatives-slider .box img{
         height:30rem;
         width:80%;
     }
@@ -785,13 +785,13 @@ section{
         width: 80%;
     }
 
-    .about-us span{
+    .representatives span{
         color:var(--green);
         font-size: 3rem;
         padding-bottom: .5rem;
     }
 
-    .about-us .about-us-slider .box img{
+    .representatives .representatives-slider .box img{
         height:20rem;
         width:70%;
     }
@@ -824,7 +824,7 @@ section{
         width: 70%;
     }
 
-    .about-us .about-us-slider .box img{
+    .representatives .representatives-slider .box img{
         height:30rem;
     }
 
@@ -870,7 +870,7 @@ section{
         width: 90%;
     }
 
-    .about-us .about-us-slider .box img{
+    .representatives .representatives-slider .box img{
         height:60%;
     }
 
@@ -890,7 +890,7 @@ section{
         width: 90%;
     }
 
-    .about-us .about-us-slider .box img{
+    .representatives .representatives-slider .box img{
         height:30rem;
     }
 }
