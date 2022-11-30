@@ -456,7 +456,7 @@ section{
     font-size: 1.7rem;
 }
 
-.ab {
+.aboutUs {
     background: url("/image/aboutUs_bg.png") no-repeat;
     background-size: cover;
     background-position: center;
@@ -464,11 +464,11 @@ section{
     min-height: 20vh;
 }
 
-.ab .heading {
+.aboutUs .heading {
     color: #fff;
 }
 
-.ab .row .box {
+.aboutUs .row .box {
     background-color: #fff;
     padding:5rem;
     margin: auto;
@@ -479,18 +479,18 @@ section{
     margin-bottom: 2rem;
 }
 
-.ab .row .content-box {
+.aboutUs .row .content-box {
     outline-color: var(--slate);
     outline-style: ridge;
     outline-width: 0.5rem;
     outline-offset: -1rem;
 }
 
-.ab .row .box:hover {
+.aboutUs .row .box:hover {
     transform: scale(1.01);
 }
 
-.ab .row .box h1 {
+.aboutUs .row .box h1 {
     color: var(--green);
     font-size: 2.5rem;
 }
