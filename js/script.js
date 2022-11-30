@@ -59,7 +59,7 @@ var swiper = new Swiper(".vehicles-slider", {
 var swiper = new Swiper(".about-us-slider", {
   grabCursor: true,
   centeredSlides: true,  
-  spaceBetween: 20,
+  spaceBetween: 0,
   loop:true,
   autoplay: {
     delay: 7000,

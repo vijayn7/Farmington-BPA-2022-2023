@@ -595,18 +595,19 @@ section{
 }
 
 .about-us h1{
-    color: white;
+    color:#ffffff;
     font-size: 7rem;
 }
 
 .about-us p {
-    color: var(--green);
+    color: black;
     font-size: 2rem;
 }
 
 .about-us .about-us-slider{
     padding-bottom: 15rem;
     padding-top: 3rem;
+   
 }
 
 .about-us .about-us-slider .box{
@@ -614,20 +615,23 @@ section{
     text-align: center;
     padding:2rem;
     margin: 2rem 0;
-    opacity: .9;
+   opacity: .8;
     transform: scale(.9);
+   filter: blur(4px);
 }
 
 .about-us .about-us-slider .swiper-slide-active{
     opacity: 1;
+    filter: blur(0);
     transform: scale(1);
     box-shadow: var(--box-shadow);
     border:var(--border);
     border-radius: .5rem;
+    
 }
 
 .about-us span{
-    color:var(--green);
+    color:#002517;
     font-size: 4.5rem;
     padding-bottom: .5rem;
 }
@@ -637,7 +641,7 @@ section{
     width:40rem;
     border-radius: 40%;
     object-fit: cover;
-    border: .3rem solid #35605A ;
+    border: .3rem solid #002517 ;
     
 }
 
