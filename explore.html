@@ -153,6 +153,26 @@
                 </label>
   
             </div>
+
+            <h3>Transmisson:</h3>
+            <div data-toggle="buttons">
+
+                <label id="transAll" class="btn active" id="transAll" style="background-color: #35605A;">
+                  <input type="radio" name="color" value="all" onclick="transmisson('transAll')">
+                  Show all
+                </label>
+  
+                <label id="automatic" class="btn">
+                  <input type="radio" name="color" value="automatic" onclick="transmisson('automatic')">
+                  Automatic
+                </label>
+  
+                <label id="manual" class="btn">
+                  <input type="radio" name="color" value="manual" onclick="transmisson('manual')">
+                  Manual
+                </label>
+  
+            </div>
           </div>
     </div>
 </section>
@@ -162,7 +182,7 @@
 
     <div class="row">
 
-        <div class="box column red crossover">
+        <div class="box column red crossover automatic">
             <img src="image/cars/1.png" alt="">
             <div class="content">
                 <h3>Kia Sportage</h3>
@@ -176,7 +196,7 @@
             </div>
         </div>
 
-        <div class="box column gray car">
+        <div class="box column gray car automatic">
             <img src="image/cars/2.png" alt="">
             <div class="content">
                 <h3>Buick Verano GS</h3>
@@ -190,7 +210,7 @@
             </div>
         </div>
 
-        <div class="box column white crossover">
+        <div class="box column white crossover automatic">
             <img src="image/cars/3.png" alt="">
             <div class="content">
                 <h3>Chevrolet Equinox Premier</h3>
@@ -204,7 +224,7 @@
             </div>
         </div>
 
-        <div class="box column blue convertible">
+        <div class="box column blue convertible manual">
             <img src="image/cars/4.png" alt="">
             <div class="content">
                 <h3>Mercedes Benz SL-Class</h3>
@@ -218,7 +238,7 @@
             </div>
         </div>
 
-        <div class="box column orange car">
+        <div class="box column orange car automatic">
             <img src="image/cars/5.png" alt="">
             <div class="content">
                 <h3>Ford Focus ST</h3>
@@ -232,7 +252,7 @@
             </div>
         </div>
 
-        <div class="box column blue crossover">
+        <div class="box column blue crossover automatic">
             <img src="image/cars/6.png" alt="">
             <div class="content">
                 <h3>Kia Sportage</h3>
@@ -246,7 +266,7 @@
             </div>
         </div>
 
-        <div class="box column white crossover">
+        <div class="box column white crossover automatic">
             <img src="image/cars/7.png" alt="">
             <div class="content">
                 <h3>MG HS</h3>
@@ -260,7 +280,7 @@
             </div>
         </div>
 
-        <div class="box column gray sportsCar">
+        <div class="box column gray sportsCar manual">
             <img src="image/cars/8.png" alt="">
             <div class="content">
                 <h3>Porsche Panamera</h3>
@@ -274,7 +294,7 @@
             </div>
         </div>
 
-        <div class="box column blue crossover">
+        <div class="box column blue crossover automatic">
             <img src="image/cars/9.png" alt="">
             <div class="content">
                 <h3>Audi e-tron</h3>
@@ -288,7 +308,7 @@
             </div>
         </div>
 
-        <div class="box column black sportsCar convertible">
+        <div class="box column black sportsCar convertible manual">
             <img src="image/cars/10.png" alt="">
             <div class="content">
                 <h3>Porsche Boxster S</h3>
@@ -302,7 +322,7 @@
             </div>
         </div>
 
-        <div class="box column blue car">
+        <div class="box column blue car automatic">
             <img src="image/cars/11.png" alt="">
             <div class="content">
                 <h3>Buick Avista</h3>
@@ -316,7 +336,7 @@
             </div>
         </div>
 
-        <div class="box column gray crossover">
+        <div class="box column gray crossover manual">
             <img src="image/cars/12.png" alt="">
             <div class="content">
                 <h3>Porsche Cayman</h3>
@@ -330,7 +350,7 @@
             </div>
         </div>
 
-        <div class="box column black other crossover">
+        <div class="box column black other crossover automatic">
             <img src="image/cars/13.png" alt="">
             <div class="content">
                 <h3>Ford Interceptor</h3>
@@ -344,7 +364,7 @@
             </div>
         </div>
 
-        <div class="box column yellow sportsCar">
+        <div class="box column yellow sportsCar manual">
             <img src="image/cars/14.png" alt="">
             <div class="content">
                 <h3>Porsche Cayman</h3>
@@ -358,7 +378,7 @@
             </div>
         </div>
 
-        <div class="box column white sportsCar">
+        <div class="box column white sportsCar manual">
             <img src="image/cars/15.png" alt="">
             <div class="content">
                 <h3>Porsche Panamera</h3>
@@ -372,7 +392,7 @@
             </div>
         </div>
 
-        <div class="box column red other truck">
+        <div class="box column red other truck automatic">
             <img src="image/cars/16.png" alt="">
             <div class="content">
                 <h3>Firetruck</h3>
@@ -386,7 +406,7 @@
             </div>
         </div>
 
-        <div class="box column gray car sportsCar">
+        <div class="box column gray car sportsCar automatic">
             <img src="image/cars/17.png" alt="">
             <div class="content">
                 <h3>Chevrolet Camaro</h3>
@@ -400,7 +420,7 @@
             </div>
         </div>
 
-        <div class="box column white truck">
+        <div class="box column white truck automatic">
             <img src="image/cars/18.png" alt="">
             <div class="content">
                 <h3>Toyota Tundra</h3>
@@ -462,26 +482,40 @@
 
 <!-- In Document Script -->
 <script>
-    function carType(id) {
+    function transmisson(id) {
         let green = "#002517";
         let slate = "#35605A";
-        const classes = ["typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption", "colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption"];
+        const classes = ["typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption", "colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption", "transAll", "automatic", "manual"];
         for (let i = 0; i < classes.length; i++) {
             document.getElementById(classes[i]).style.background = green;
         }
         document.getElementById(id).style.background = slate;
         document.getElementById('colorAll').style.background = slate;
+        document.getElementById('typeAll').style.background = slate;
+    }
+
+    function carType(id) {
+        let green = "#002517";
+        let slate = "#35605A";
+        const classes = ["typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption", "colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption", "transAll", "automatic", "manual"];
+        for (let i = 0; i < classes.length; i++) {
+            document.getElementById(classes[i]).style.background = green;
+        }
+        document.getElementById(id).style.background = slate;
+        document.getElementById('colorAll').style.background = slate;
+        document.getElementById('transAll').style.background = slate;
     }
 
     function color(id) {
         let green = "#002517";
         let slate = "#35605A";
-        const classes = ["colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption", "typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption"];
+        const classes = ["typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption", "colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption", "transAll", "automatic", "manual"];
         for (let i = 0; i < classes.length; i++) {
             document.getElementById(classes[i]).style.background = green;
         }
         document.getElementById(id).style.background = slate;
         document.getElementById('typeAll').style.background = slate;
+        document.getElementById('transAll').style.background = slate;
     }
 </script>
 
