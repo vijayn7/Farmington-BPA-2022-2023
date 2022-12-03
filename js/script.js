@@ -62,7 +62,7 @@ var swiper = new Swiper(".representatives-slider", {
   spaceBetween: 0,
   loop:true,
   autoplay: {
-    delay: 7000,
+    delay: 5000,
     disableOnInteraction: false,
   },
   

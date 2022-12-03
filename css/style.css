@@ -894,4 +894,9 @@ section{
     .representatives .representatives-slider .box img{
         height:30rem;
     }
+
+    .representatives h1{
+        color:#ffffff;
+        font-size: 5rem;
+    }
 }
