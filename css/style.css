@@ -485,6 +485,8 @@ section{
     outline-style: ridge;
     outline-width: 0.5rem;
     outline-offset: -1rem;
+    -moz-outline-radius: 3rem;
+    -webkit-outline-radius: 3rem;
 }
 
 .aboutUs .row .box:hover {
