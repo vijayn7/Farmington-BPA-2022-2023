@@ -358,8 +358,14 @@ section{
 }
 
 .loan {
-    background: #eee;
+    background: url("/image/subscribe.png") no-repeat;
     padding-bottom: 10rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.loan .heading {
+    color: #fff;
 }
 
 .loan .row{
