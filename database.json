@@ -1,0 +1,17 @@
+[
+    {
+        "car": 1,
+        "name": "Kia Sportage",
+        "year": "2022",
+        "price": "$24,000",
+        "mileage": "109,280"
+    },
+
+    {
+        "car": 2,
+        "name": "Buick Verano",
+        "year": "2016",
+        "price": "$10,000",
+        "mileage": "13,510"
+    }
+]
