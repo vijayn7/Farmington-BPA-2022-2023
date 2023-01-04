@@ -1,17 +1,182 @@
 [
     {
         "car": 1,
+        "imageSrc": "/image/cars/1.png",
         "name": "Kia Sportage",
         "year": "2022",
         "price": "$24,000",
-        "mileage": "109,280"
+        "mileage": "109,280",
+        "driveType": "Automatic"
     },
 
     {
         "car": 2,
+        "imageSrc": "/image/cars/2.png",
         "name": "Buick Verano",
         "year": "2016",
         "price": "$10,000",
-        "mileage": "13,510"
+        "mileage": "13,510",
+        "driveType": "Automatic"
+    },
+
+    {
+        "car": 3,
+        "imageSrc": "/image/cars/3.png",
+        "name": "Chevrolet Equinox Premier",
+        "year": "2020",
+        "price": "$27,299",
+        "mileage": "13,000",
+        "driveType": "Automatic"
+    },
+
+    {
+        "car": 4,
+	    "imageSrc": "/image/cars/4.png",
+        "name": "Mercedes Benz SL-Class",
+        "year": "2017",
+        "price": "$23,499",
+        "mileage": "59,000",
+        "driveType": "Manual"
+    },
+
+    {
+        "car": 5,
+        "imageSrc": "/image/cars/5.png",
+        "name": "Ford Focus ST",
+        "year": "2017",
+        "price": "$15,497",
+        "mileage": "93,000",
+        "driveType": "Automatic"
+    },
+
+    {
+        "car": 6,
+        "imageSrc": "/image/cars/6.png",
+        "name": "Kia Sportage",
+        "year": "2021",
+        "price": "$23,909",
+        "mileage": "20,000",
+        "driveType": "Automatic"
+    },
+
+    {
+        "car": 7,
+        "imageSrc": "/image/cars/7.png",
+        "name": "MG HS",
+        "year": "2020",
+        "price": "$42,990",
+        "mileage": "11,060",
+        "driveType": "Automatic"
+    },
+
+    {
+        "car": 8,
+        "imageSrc": "/image/cars/8.png",
+        "name": "Porsche Panamera",
+        "year": "2014",
+        "price": "$24,995",
+        "mileage": "123,478",
+        "driveType": "Manual"
+    },
+
+    {
+        "car": 9,
+        "imageSrc": "/image/cars/9.png",
+        "name": "Audi e-tron",
+        "year": "2019",
+        "price": "$62,000",
+        "mileage": "8,670",
+        "driveType": "Automatic"
+    },
+
+    {
+        "car": 10,
+        "imageSrc": "/image/cars/10.png",
+        "name": "Porsche Boxster S",
+        "year": "2014",
+        "price": "$43,590",
+        "mileage": "31,671",
+        "driveType": "Manual"
+    },
+
+    {
+        "car": 11,
+        "imageSrc": "/image/cars/11.png",
+        "name": "Buick Avista",
+        "year": "2022",
+        "price": "$31,295",
+        "mileage": "20,910",
+        "driveType": "Automatic"
+    },
+
+    {
+        "car": 12,
+        "imageSrc": "/image/cars/12.png",
+        "name": "Porsche Cayenne",
+        "year": "2009",
+        "price": "$29,995",
+        "mileage": "27,302",
+        "driveType": "Manual"
+    },
+
+    {
+        "car": 13,
+        "imageSrc": "/image/cars/13.png",
+        "name": "Ford Interceptor",
+        "year": "2017",
+        "price": "$17,950",
+        "mileage": "101,375",
+        "driveType": "Automatic"
+    },
+
+    {
+        "car": 14,
+        "imageSrc": "/image/cars/14.png",
+        "name": "Porsche Cayman",
+        "year": "2015",
+        "price": "$45,000",
+        "mileage": "101,375",
+        "driveType": "Manual"
+    },
+
+    {
+        "car": 15,
+        "imageSrc": "/image/cars/15.png",
+        "name": "Porsche Panamera",
+        "year": "2010",
+        "price": "$26,495",
+        "mileage": "76,588",
+        "driveType": "Manual"
+    },
+
+    {
+        "car": 16,
+        "imageSrc": "/image/cars/16.png",
+        "name": "Firetruck",
+        "year": "2021",
+        "price": "$250,000",
+        "mileage": "102,086",
+        "driveType": "Automatic"
+    },
+
+    {
+        "car": 17,
+        "imageSrc": "/image/cars/17.png",
+        "name": "Chevrolet Camaro SS",
+        "year": "2018",
+        "price": "$39,499",
+        "mileage": "25,185",
+        "driveType": "Automatic"
+    },
+
+    {
+        "car": 18,
+        "imageSrc": "/image/cars/18.png",
+        "name": "Toyota Tundra",
+        "year": "2009",
+        "price": "$9,021",
+        "mileage": "227,114",
+        "driveType": "Automatic"
     }
+
 ]
