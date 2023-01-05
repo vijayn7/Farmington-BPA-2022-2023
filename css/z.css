@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+}
+
+.slider {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    color: white;
+}
+
+.slide {
+    inset: 0;
+    position: absolute;
+    background-image: url(/image/abstract1.jpeg);
+    background-size: cover;
+    background-position: center; 
+    min-height: 100vh;
+    min-width: 100%;
+}   
+
+.slider-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translate(-50%);
+    color: white;
+
+}
+
+.arrows {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.slider-button.prev {
+    left: 5%;
+}
+
+.slider-button.next {
+    right: 5%;
+}
+
+.slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.slide .name {
+    font-family: 'Unbounded', cursive;
+    font-size: 3rem;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.slide .description {
+    font-family: 'Fira Code', monospace;
+    width: 45%;
+    margin: auto;
+}
+
+.slider-price {
+    padding-bottom: 3rem;
+}
