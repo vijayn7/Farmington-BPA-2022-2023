@@ -99,7 +99,7 @@ section{
     position: fixed;
     top:0; left:0; right:0;
     padding:3rem 9%;
-    z-index: 1000;
+    z-index: 2;
     background: #fff;
 }
 
@@ -256,7 +256,7 @@ section{
 
 .slider .arrows .slider-button {
     position: absolute;
-    z-index: 2;
+    z-index: 0;
     background: none;
     border: none;
     font-size: 6rem;
@@ -320,13 +320,14 @@ section{
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 2.7rem;
+    top: 0;
     right: 0;
     background-color:#eee;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     z-index: 2;
+    box-shadow: var(--box-shadow)
   }
   
   .contactsb a {
@@ -344,7 +345,7 @@ section{
   
   .contactsb .close {
     position: absolute;
-    top: 5rem;
+    top: 0px;
     right: 205px;
     font-size: 36px;
 
