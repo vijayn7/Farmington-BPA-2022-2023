@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins&family=Unbounded&display=swap');
+@import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com');
 
 :root{
     --slate:#35605A;
@@ -238,10 +241,83 @@ section{
     margin:1rem 0;
 }
 
+.slider {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    color: white;
+}
+
+.slider .arrows {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.slider .arrows .slider-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 6rem;
+    top: 50%;
+    transform: translate(-50%);
+    color: white;
+
+}
+
+.slider .arrows .slider-button.prev {
+    text-align: right;
+    left: 5%;
+}
+
+.slider .arrows .slider-button.next {
+    text-align: right;
+    right: 0%;
+}
+
+.slider .slide {
+    background-color: black ;
+    inset: 0;
+    position: absolute;
+    background-image: url(/image/backgrounds/abstract1.jpeg);
+    background-size: cover;
+    background-position: center; 
+    min-height: 100vh;
+    min-width: 100%;
+}   
+
+.slider .slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.slider .slide .name {
+    font-family: 'Unbounded', cursive;
+    font-size: 3rem;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.slider .slide .description {
+    font-family: 'Fira Code', monospace;
+    width: 45%;
+    margin: auto;
+}
+
+.slider .slide .description .slider-price{
+    padding-bottom: 3rem;
+}
+
 .newsletter{
     padding:6rem 2rem;
-    background: url("https://imgs.search.brave.com/RNiz0SS6--hR7hxv84gJg01KHLiUQ_BTk45Xtx5kW4c/rs:fit:700:233:1/g:ce/aHR0cDovL2Nkbi53/YWxscGFwZXJzYWZh/cmkuY29tLzk1LzEv/alBBdFE4LmpwZw") no-repeat;
-    background: url("/image/subscribe.png") no-repeat;
+    background: url("/image/backgrounds/subscribe.png") no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;  
@@ -358,7 +434,7 @@ section{
 }
 
 .loan {
-    background: url("/image/subscribe.png") no-repeat;
+    background: url("/image/backgrounds/subscribe.png") no-repeat;
     padding-bottom: 10rem;
     background-size: cover;
     background-position: center;
@@ -463,7 +539,7 @@ section{
 }
 
 .aboutUs {
-    background: url("/image/aboutUs_bg.png") no-repeat;
+    background: url("/image/backgrounds/aboutUs_bg.png") no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;  
@@ -595,7 +671,7 @@ section{
 .representatives {
     background-color: #eee;
     padding-top: 15rem;
-    background: url("/image/subscribe.png");
+    background: url("/image/backgrounds/subscribe.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;  
