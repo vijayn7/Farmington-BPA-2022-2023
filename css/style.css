@@ -616,6 +616,7 @@ section{
 
 .reviews {
     padding-bottom: 2rem;
+    background-color: #eee;
 }
 
 .reviews .review-slider{
