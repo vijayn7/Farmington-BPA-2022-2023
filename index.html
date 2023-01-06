@@ -28,12 +28,9 @@
 
     <nav class="navbar">
         <a href="#home">home</a>
-        <a href="#vehicles">popular</a>
-        <a href="#reviews">reviews</a>
-        <a href="#contact">contact</a>
         <a href='explore.html'>explore</a>
-        <a href='#aboutUs'>About Us</a>
         <a href='salesRepresentatives.html'>representatives</a>
+        <a><span id="contact"><span onclick="openCU()">Contact Us</span></span>
     </nav>
 
     <div id="login-btn">
@@ -75,6 +72,24 @@
     <a data-speed="7" href="explore.html" class="btn">explore cars</a>
 
 </section>
+
+<div id="contactsb" class="contactsb">
+    <a href="javascript:void(0)" class="close" onclick="closeCU()">&times;</a>
+
+</div>
+
+<script>
+    function openCU() {
+      document.getElementById("contactsb").style.width = "250px";
+      
+    }
+    
+    function closeCU() {
+      document.getElementById("contactsb").style.width = "0";
+      
+    }
+    </script>
+
 
 <!-- Subsrcibe To Newsletter -->
 <section class="newsletter">
@@ -326,16 +341,7 @@
 
 </section>
 
-<!-- About Us -->
-<section class="aboutUs" id="aboutUs">
-    <h1 class="heading">About Us</h1>
 
-    <div class="row">
-        <div class="box content-box">
-            <h1>Here at AutoWizard we strive to ensure our customers get quality cars for magical prices. Before a car is even listed on our site we go through and verify that it’s cleaned properly, has its essential fluids topped off, and that all of its components are properly lubricated and functioning. After our cars are in top condition for our customers we set the price of all of our vehicles in accordance to their recommended Kelly Blue Book value ensuring our customers get a fair price for our products. Finally to ensure that our customers have a wizardly experience we have our sales representatives and contact forms so we can answer any questions that may arise during their search.</h1>
-        </div>
-    </div>
-</section>
 
 <!-- Contact Form & Map -->
 <section class="contact" id="contact">
@@ -372,11 +378,8 @@
         <div class="box">
             <h3>quick links</h3>
             <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
-           <a href="#vehicles"> <i class="fas fa-arrow-right"></i> popular </a>
-           <a href="#reviews"> <i class="fas fa-arrow-right"></i> reviews </a>
-           <a href="#contact"> <i class="fas fa-arrow-right"></i> contact </a>
+           <a href="#contact"> <i class="fas fa-arrow-right"></i> contact us</a>
            <a href="explore.html"> <i class="fas fa-arrow-right"></i> explore </a>
-           <a href="#aboutUs"> <i class="fas fa-arrow-right"></i> About Us </a>
            <a href="salesRepresentatives.html"> <i class="fas fa-arrow-right"></i> Representatives </a>
        </div>
  
