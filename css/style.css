@@ -240,8 +240,7 @@ section{
 
 .newsletter{
     padding:6rem 2rem;
-    background: url("https://imgs.search.brave.com/RNiz0SS6--hR7hxv84gJg01KHLiUQ_BTk45Xtx5kW4c/rs:fit:700:233:1/g:ce/aHR0cDovL2Nkbi53/YWxscGFwZXJzYWZh/cmkuY29tLzk1LzEv/alBBdFE4LmpwZw") no-repeat;
-    background: url("/image/subscribe.png") no-repeat;
+    background: url("/image/backgrounds/subscribe.png") no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;  
@@ -358,7 +357,7 @@ section{
 }
 
 .loan {
-    background: url("/image/subscribe.png") no-repeat;
+    background: url("/image/backgrounds/subscribe.png") no-repeat;
     padding-bottom: 10rem;
     background-size: cover;
     background-position: center;
@@ -463,7 +462,7 @@ section{
 }
 
 .aboutUs {
-    background: url("/image/aboutUs_bg.png") no-repeat;
+    background: url("/image/backgrounds/aboutUs_bg.png") no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;  
@@ -595,7 +594,7 @@ section{
 .representatives {
     background-color: #eee;
     padding-top: 15rem;
-    background: url("/image/subscribe.png");
+    background: url("/image/backgrounds/subscribe.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;  

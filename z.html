@@ -18,16 +18,16 @@
 <section class="slider">
 
   <div class="arrows">
-    <button class="slider-button prev"> &#8592;</button>
-    <button class="slider-button next"> &#8594;</button>
+    <button class="slider-button prev" id="sliderPrev"> &#8592;</button>
+    <button class="slider-button next" id="sliderNext"> &#8594;</button>
   </div>
 
-  <div class="slide">
+  <div class="slide" id="slide">
 
-    <h1 class="name" id="name"> 2022 Mercedes Benz A-Class</h1>
+    <h1 class="name" id="sliderName"> 2022 Mercedes Benz A-Class</h1>
 
     <div class="img">
-      <img class="slider-img" id="slider-img" src="/image/cars/10.png" style="height: 50%; width: 50%;">
+      <img class="slider-img" id="slider-img" src="/image/cars/10.png" style="height: 50%; width: 50%;" alt="img">
     </div>
 
     <div class="description">
@@ -39,6 +39,7 @@
 
 </section>
 
+<script type="module" src="/js/z.js"></script>
 
 </body>
 </html>
