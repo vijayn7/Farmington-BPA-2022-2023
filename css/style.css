@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins&family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
 @import url('https://fonts.gstatic.com');
 @import url('https://fonts.googleapis.com');
 
@@ -13,7 +14,7 @@
 }
 
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
@@ -330,7 +331,7 @@ section{
     box-shadow: var(--box-shadow)
   }
   
-  .contactsb a {
+  .contactsb .header a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -339,16 +340,16 @@ section{
     transition: 0.3s;
   }
   
-  .contactsb a:hover {
+  .contactsb .header a:hover {
     color:#35605A;
   }
   
-  .contactsb .close {
+  .contactsb .header .close {
     position: absolute;
-    top: 0px;
-    right: 205px;
-    font-size: 36px;
-
+    top: 6px;
+    right: 6px;
+    font-size: 20px;
+margin-bottom: 20px;
   }
  
 #contact {
@@ -360,7 +361,150 @@ section{
     padding: 16px;
   }
 
+.contactsb .header {
+position: absolute;
+    box-shadow: var(--box-shadow);
+    margin-top: 0px;
+    top: 0;
+    max-height: 5px;
+    height: 100%;
+    display: flex;
+  justify-content: center;
+}
 
+.contactsb .header h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+   font-size: 1.9rem;
+  color: #002517;
+  
+}
+
+.contactsb .contactform {
+    position: absolute;
+    background-image: url(/image/backgrounds/contactform\ bg.jpg);
+    margin-top: 3rem;
+    margin-left: 1.3rem;
+    margin-right: 1.5rem;
+    max-height: 20rem;
+    height: 100%;
+    max-width: 32.55rem;
+    width: 100%;
+    background-size: cover;
+    box-shadow: var(--box-shadow);
+    
+}
+
+.contactsb .contactform h2 {
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2.5rem;
+    color: black;
+    font-family: 'Unbounded', sans-serif;
+}
+
+.contactsb .contact-map {
+    position: absolute;
+    background-image: url(/image/backgrounds/mapsbg.jpg);
+    margin-top: 26rem;
+    margin-left: 1.3rem;
+    margin-right: 1.5rem;
+    max-height: 20rem;
+    height: 100%;
+    max-width: 32.55rem;
+    width: 100%;
+    background-size: cover;
+    box-shadow: var(--box-shadow);
+}
+
+.contactsb .contact-map h2 {
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2.5rem;
+    color: black;
+    font-family: 'Unbounded', sans-serif;
+}
+
+.contactsb .smcards {
+    width: 33rem;
+  height: 254px;
+  border-radius: 4px;
+  color: #eee;
+  display: flex;
+  gap: 5px;
+  padding: .4em;
+margin-top: 49rem;
+margin-left: 1.3rem;
+}
+
+.contactsb .smcards  p {
+    height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s;
+ background: none;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactsb .smcards :hover {
+    flex: 4;
+}
+
+.contactsb .smcards  p span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Unbounded', sans-serif;
+    letter-spacing: .1em;
+    font-size: 2rem;
+  }
+  
+  .contactsb .smcards  p:hover span {
+    transform: rotate(0);
+  }
+
+.contactsb .HOO {
+    position: absolute;
+    background-color: white;
+    margin-top: 3rem;
+    margin-left: 1.3rem;
+    margin-right: 1.5rem;
+    max-height: 23rem;
+    height: 100%;
+    max-width: 32.55rem;
+    width: 100%;
+    background-size: cover;
+    box-shadow: var(--box-shadow);
+    
+}
+
+.contactsb .HOO h1 {
+    margin-top: 2.4rem;
+    font-size: 2rem;
+    font-family: 'Unbounded', sans-serif;
+    color: black;
+}
+
+.contactsb .HOO p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    font-family: 'Unbounded', sans-serif;
+}
 
 
 .newsletter{
@@ -701,10 +845,7 @@ section{
     transform: scale(1.01);
 }
 
-.aboutUs .row .box h1 {
-    color: var(--green);
-    font-size: 2rem;
-}
+
 
 .selection {
     background: #eee;
@@ -881,14 +1022,7 @@ section{
     color:var(--green);
 }
 
-.contact .row .map{
-    flex:1 1 42rem;
-    width: 100%;
-    padding:2rem;
-    box-shadow: var(--box-shadow);
-    border:var(--border);
-    border-radius: .5rem;
-}
+
 
 .contact .row form{
     padding:2rem;
@@ -897,6 +1031,7 @@ section{
     border:var(--border);
     text-align: center;
     border-radius: .5rem;
+    height: 70rem;
 }
 
 .contact .row form h3{
@@ -908,17 +1043,24 @@ section{
 .contact .row form .box{
     width:100%;
     border-radius: .5rem;
-    padding:1rem 1.2rem;
+    padding: 1rem 1.2rem;
     font-size: 1.6rem;
     text-transform: none;
     border:var(--border);
     margin:.7rem 0;
+    height: 10rem;
 }
 
 .contact .row form textarea{
-    height:15rem;
-    resize: none;
+    height: 40rem;
+ 
 }
+
+.contact .row form .btn {
+    margin-top: 3rem;
+}
+
+
 
 .footer{
     background: var(--green);
