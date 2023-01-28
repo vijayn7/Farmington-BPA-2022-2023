@@ -254,40 +254,37 @@ section{
     padding-top: 60px;
     z-index: 2;
     box-shadow: var(--box-shadow)
-  }
+}
   
-  .contactsb a {
+.contactsb a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color:#002517;
     display: block;
     transition: 0.3s;
-  }
+}
   
-  .contactsb a:hover {
+.contactsb a:hover {
     color:#35605A;
-  }
+ }
   
-  .contactsb .close {
+.contactsb .close {
     position: absolute;
     top: 0px;
     right: 205px;
     font-size: 36px;
 
-  }
+}
  
 #contact {
     cursor: pointer;
 }
 
-  #main {
+#main {
     transition: margin-left .5s;
     padding: 16px;
-  }
-
-
-
+}
 
 .newsletter{
     padding:6rem 2rem;
@@ -341,82 +338,6 @@ section{
 
 .newsletter form input[type="submit"]:hover{
     background: var(--slate);
-}
-
-.slider {
-    width: 100vw;
-    height: 80vh;
-    position: relative;
-    color: white;
-}
-
-.slider .arrows {
-    text-align: center;
-    width: 50%;
-    margin: auto;
-}
-
-.slider .arrows .slider-button {
-    position: absolute;
-    z-index: 2;
-    background: none;
-    border: none;
-    font-size: 6rem;
-    top: 50%;
-    transform: translate(-50%);
-    color: white;
-    filter: invert(1);
-}
-
-.slider .arrows .slider-button.prev {
-    text-align: right;
-    left: 5%;
-}
-
-.slider .arrows .slider-button.next {
-    text-align: right;
-    right: 0%;
-}
-
-.slider .slide {
-    padding-top: 7%;
-    background-color: black ;
-    inset: 0;
-    position: absolute;
-    background-image: url(/image/backgrounds/abstract1.jpeg);
-    background-size: cover;
-    background-position: center; 
-    min-height: 100vh;
-    min-width: 100%;
-}   
-
-.slider .slide img {
-    padding-top: 10%rem;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin: auto;
-    width: 50%;
-}
-
-.slider .slide .name {
-    font-family: 'Unbounded', cursive;
-    font-size: 3rem;
-    margin: auto;
-    width: 80%;
-    text-align: center;
-    padding-top: 1rem;
-}
-
-.slider .slide .description {
-    font-family: 'Fira Code', monospace;
-    width: 45%;
-    margin: auto;
-}
-
-.slider .slide .description .slider-price{
-    padding-bottom: 3rem;
 }
 
 .vehicles .vehicles-slider{
@@ -718,6 +639,53 @@ section{
     font-size: 1rem;
     color:var(--slate);
     padding:0 .5rem;
+}
+
+.carInfo {
+    background-color: #eee;
+    padding-top: 15rem;
+    text-align: center;
+}
+
+.carInfo .content{
+    background-color: #fff;
+}
+
+.carInfo .content .carTitle {
+    font-size: 5rem;
+    text-align: left;
+    padding: 3rem 0 0rem 3rem;
+}
+
+.carInfo .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:6rem;
+    width: 100%;
+}
+
+.carInfo .content .row img {
+    width: 100%;
+    height: 100%;
+}
+
+.carInfo .content .row .box{
+    background-color: #fff;
+    text-align: left;
+    padding-bottom: 5rem;
+    margin: auto;
+    width: 100%;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+}
+
+.carInfo .content .row .box h1 {
+    font-size: 2rem;
+}
+
+.carInfo .content .row .box .monthly {
+    margin-left: 1rem;
+    background-color: var(--green);
 }
 
 .representatives {
