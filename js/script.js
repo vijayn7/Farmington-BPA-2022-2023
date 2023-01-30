@@ -2,27 +2,27 @@ let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.navbar');
 
 // navbar
-menu.onclick = () =>{
+menu.onclick = () => {
   menu.classList.toggle('fa-times');
   navbar.classList.toggle('active');
 }
 
-document.querySelector('#login-btn').onclick = () =>{
+document.querySelector('#login-btn').onclick = () => {
   document.querySelector('.login-form-container').classList.toggle('active');
 }
 
-document.querySelector('#close-login-form').onclick = () =>{
+document.querySelector('#close-login-form').onclick = () => {
   document.querySelector('.login-form-container').classList.remove('active');
 }
 
-window.onscroll = () =>{
+window.onscroll = () => {
 
   menu.classList.remove('fa-times');
   navbar.classList.remove('active');
 
-  if(window.scrollY > 0){
+  if (window.scrollY > 0) {
     document.querySelector('.header').classList.add('active');
-  }else{
+  } else {
     document.querySelector('.header').classList.remove('active');
   };
 
@@ -31,16 +31,16 @@ window.onscroll = () =>{
 // Swiper: vehicles
 var swiper = new Swiper(".vehicles-slider", {
   grabCursor: true,
-  centeredSlides: true,  
+  centeredSlides: true,
   spaceBetween: 20,
-  loop:true,
+  loop: true,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
-    clickable:true,
+    clickable: true,
   },
   breakpoints: {
     0: {
@@ -58,14 +58,14 @@ var swiper = new Swiper(".vehicles-slider", {
 // Swiper: Sales Reprresentatives
 var swiper = new Swiper(".representatives-slider", {
   grabCursor: true,
-  centeredSlides: true,  
+  centeredSlides: true,
   spaceBetween: 0,
-  loop:true,
+  loop: true,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
   },
-  
+
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -85,16 +85,16 @@ var swiper = new Swiper(".representatives-slider", {
 //Swiper: Reviews
 var swiper = new Swiper(".review-slider", {
   grabCursor: true,
-  centeredSlides: true,  
+  centeredSlides: true,
   spaceBetween: 20,
-  loop:true,
+  loop: true,
   autoplay: {
     delay: 9500,
     disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
-    clickable:true,
+    clickable: true,
   },
   breakpoints: {
     0: {
@@ -125,14 +125,14 @@ function calcualteLoan() {
   var rate = document.getElementById("rate").value / 100;
   var downPayment = document.getElementById("downPayment").value;
   var taxRate = document.getElementById("taxRate").value / 100;
-  amount-= downPayment;
+  amount -= downPayment;
   var salesTax = amount * taxRate;
   var totalLoanIntrest = amount * rate * (term / 12);
-  var total = amount*1 + totalLoanIntrest*1;
+  var total = amount * 1 + totalLoanIntrest * 1;
 
   document.getElementById("monthly").value = formatter.format(total / term);
   document.getElementById("totalLoanAmount").value = formatter.format(amount);
-  document.getElementById("upfront").value = formatter.format(downPayment*1 + salesTax*1);
+  document.getElementById("upfront").value = formatter.format(downPayment * 1 + salesTax * 1);
   document.getElementById("totalLoanIntrest").value = formatter.format(totalLoanIntrest);
-  document.getElementById("totalCost").value = formatter.format(total*1 + downPayment*1 + salesTax*1);
+  document.getElementById("totalCost").value = formatter.format(total * 1 + downPayment * 1 + salesTax * 1);
 }
