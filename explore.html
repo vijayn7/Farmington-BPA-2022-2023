@@ -28,18 +28,65 @@
 
     <nav class="navbar">
         <a href="index.html#home">home</a>
-        <a href="index.html#vehicles">popular</a>
-        <a href="index.html#reviews">reviews</a>
-        <a href="index.html#contact">contact</a>
         <a href='explore.html'>explore</a>
-        <a href='index.html#aboutUs'>About Us</a>
-        <a href='salesRepresentatives.html'>Representatives</a>
+        <a href='salesRepresentatives.html'>representatives</a>
+        <a><span id="contact"><span onclick="openCU()">Contact us</span></span>
     </nav>
 
     <div id="login-btn">
         <button class="btn">login</button>
     </div>
-</header> 
+</header>  
+
+<div id="contactsb" class="contactsb">
+    <div class="header">
+         <a href="javascript:void(0)" class="close" onclick="closeCU()">&#10005;</a>
+         <h2>Contact Us</h2>
+     </div>
+     
+     <a href="ContactUs.html">
+     <div class="contactform">
+         <h2> Contact Form</h2>
+ 
+     </div>
+ </a>
+ 
+ <a href="https://goo.gl/maps/1Y8VdzrFSqTUoBCW7">
+     <div class="contact-map">
+         <h2> Visit Us in person</h2>
+ 
+     </div>
+ </a>
+ 
+ <div class="smcards"> 
+     <p style="background-image: url(/image/backgrounds/insta.png); background-size: cover;" onClick="location.href='https://www.instagram.com/farmington_bpa/'"><span>Instagram</span></p>
+     <p  style="background-image: url(/image/backgrounds/twitter.png); background-size: cover;" onClick="location.href='https://twitter.com/MichiganBPA'"><span>Twitter</span></p>
+     <p  style="background-image: url(/image/backgrounds/facebook.jpg); background-size: cover;" onClick="location.href='https://www.facebook.com/michiganbpa/'"><span>Facebook</span></p>
+ </div>
+     <div class="HOO">
+         <b><h1 class="heading hoursHeading">Hours Of Operation:</h1></b>
+ 
+         <p>Monday - Friday: 9am - 9pm</p>
+         <p>Saturday - Sunday: 7am - 5pm</p>
+     
+ 
+     </div>
+ 
+ 
+ 
+</div>
+ 
+<script>
+     function openCU() {
+       document.getElementById("contactsb").style.width = "350px";
+       
+     }
+     
+     function closeCU() {
+       document.getElementById("contactsb").style.width = "0";
+       
+     }
+</script>
 
 <!-- Back To Top Button -->
 <button id="backToTopButton" class="backToTopButton" title="Go to top">Top</button>
