@@ -68,7 +68,7 @@
     /* w */
 
     .selectionSB nav {
-        width: 300px;
+        width: 90%;
         background: #d9d9d9;
         margin: 40px auto;
     }
@@ -102,18 +102,59 @@
         font-size: 1.5rem;
     }
 
-    .selectionSB #touch {
+    /* Dropdown One */
+    .selectionSB #c {
         position: absolute;
         opacity: 0;
         height: 0px;
     }
 
-    .selectionSB #touch:checked+.color {
+    .selectionSB #c:checked+.slide {
         height: 425px;
     }
 
-    .selectionSB #touch:checked+.type {
-        height: 425px;
+    /* Dropdown Two */
+    .selectionSB #t {
+        position: absolute;
+        opacity: 0;
+        height: 0px;
+    }
+
+    .selectionSB #t:checked+.slide {
+        height: 300px;
+    }
+
+    /* Dropdown Three */
+    .selectionSB #tr {
+        position: absolute;
+        opacity: 0;
+        height: 0px;
+    }
+
+    .selectionSB #tr:checked+.slide {
+        height: 180px;
+    }
+
+    /* Dropdown Four */
+    .selectionSB #d {
+        position: absolute;
+        opacity: 0;
+        height: 0px;
+    }
+
+    .selectionSB #d:checked+.slide {
+        height: 200px;
+    }
+
+    /* Dropdown Five */
+    .selectionSB #f {
+        position: absolute;
+        opacity: 0;
+        height: 0px;
+    }
+
+    .selectionSB #f:checked+.slide {
+        height: 125px;
     }
 
     /* make this scale*/
