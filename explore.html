@@ -247,13 +247,13 @@
             <input type="checkbox" id="c">
 
             <ul class="slide color">
-                <li><a href="#">White</a></li>
-                <li><a href="#">Silver</a></li>
-                <li><a href="#">Red</a></li>
-                <li><a href="#">Gray</a></li>
-                <li><a href="#">Blue</a></li>
-                <li><a href="#">Green</a></li>
-                <li><a href="#">Black</a></li>
+                <li onclick="setColor(0)"><a href="#">White</li>
+                <li onclick="setColor(1)"><a href="#">Silver</a></li>
+                <li onclick="setColor(2)"><a href="#">Red</a></li>
+                <li onclick="setColor(3)"><a href="#">Gray</a></li>
+                <li onclick="setColor(4)"><a href="#">Blue</a></li>
+                <li onclick="setColor(5)"><a href="#">Green</a></li>
+                <li onclick="setColor(6)"><a href="#">Black</a></li>
             </ul>
 
         </nav>
@@ -264,24 +264,24 @@
             <input type="checkbox" id="t">
 
             <ul class="slide type">
-                <li><a href="#">Pickup</a></li>
-                <li><a href="#">SUV</a></li>
-                <li><a href="#">Coupe</a></li>
-                <li><a href="#">Convertible</a></li>
-                <li><a href="#">Hatchback</a></li>
+                <li onclick="setType(0)"><a href="#">Pickup</a></li>
+                <li onclick="setType(1)"><a href="#">SUV</a></li>
+                <li onclick="setType(2)"><a href="#">Coupe</a></li>
+                <li onclick="setType(3)"><a href="#">Convertible</a></li>
+                <li onclick="setType(4)"><a href="#">Hatchback</a></li>
             </ul>
 
         </nav>
 
         <nav>
 
-            <label for="tr"><span>Transmisson</span></label>
+            <label for="tr"><span>Transmission</span></label>
             <input type="checkbox" id="tr">
 
             <ul class="slide type">
-                <li><a href="#">Automatic</a></li>
-                <li><a href="#">Manual</a></li>
-                <li><a href="#">Single-Speed</a></li>
+                <li onclick="setTransmission(0)"><a href="#">Automatic</a></li>
+                <li onclick="setTransmission(1)"><a href="#">Manual</a></li>
+                <li onclick="setTransmission(2)"><a href="#">Single-Speed</a></li>
             </ul>
 
         </nav>
@@ -292,10 +292,10 @@
             <input type="checkbox" id="d">
 
             <ul class="slide type">
-                <li><a href="#">RWD</a></li>
-                <li><a href="#">AWD</a></li>
-                <li><a href="#">4WD</a></li>
-                <li><a href="#">FWD</a></li>
+                <li onclick="setDrivetrain(0)"><a href="#">RWD</a></li>
+                <li onclick="setDrivetrain(1)"><a href="#">AWD</a></li>
+                <li onclick="setDrivetrain(2)"><a href="#">4WD</a></li>
+                <li onclick="setDrivetrain(3)"><a href="#">FWD</a></li>
             </ul>
 
         </nav>
@@ -306,8 +306,8 @@
             <input type="checkbox" id="f">
 
             <ul class="slide type">
-                <li><a href="#">Electric</a></li>
-                <li><a href="#">Gasoline</a></li>
+                <li onclick="setFuel(0)"><a href="#">Electric</a></li>
+                <li onclick="setFuel(1)"><a href="#">Gasoline</a></li>
             </ul>
 
         </nav>
@@ -323,6 +323,34 @@
         function closeSelection() {
             document.getElementById("selectionSB").style.width = "0";
 
+        }
+
+        var selections = ["", "", "", "", ""]; // color, type, transmission, drivetrain, fuel
+        var colors = ["white", "silver", "red", "gray", "blue", "green", "black"];
+        var types = ["pickup", "suv", "coupe", "convertible", "Hatchback"];
+        var transmissions = ["automatic", "manual", "single-speed"];
+        var drivetrains = ["RWD", "AWD", "4WD", "FWD"];
+        var fuels = ["electric", "gasoline"];
+
+        function setColor(input) {
+            selections[0] = colors[input];
+        }
+
+        function setType(input) {
+            selections[1] = types[input];
+        }
+
+        function setTransmission(input) {
+            selections[2] = transmissios[input];
+        }
+
+        function setDrivetrain(input) {
+            selections[3] = drivetrains[input];
+        }
+
+        function setFuel(input) {
+            selections[4] = fuels[input];
+            alert(selections);
         }
     </script>
 
