@@ -312,6 +312,8 @@
 
         </nav>
 
+        <button class="btn" onclick="clearSelection()">Clear Selection</button>
+
     </div>
 
     <script>
@@ -351,6 +353,12 @@
         function setFuel(input) {
             selections[4] = fuels[input];
             alert(selections);
+        }
+
+        function clearSelection() {
+            for (var i = 0; i < selections.length; i++) {
+                selections[i] = "";
+            }
         }
     </script>
 
