@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w.css">
 
     <!-- Document Title -->
     <title>Explore</title>
@@ -231,6 +232,99 @@
             </div>
         </div>
     </section>
+
+    <button class="wwdsa btn" onclick="openSelection()">w</button>
+
+    <div id="selectionSB" class="selectionSB">
+        <div class="header">
+            <a href="javascript:void(0)" class="close" onclick="closeSelection()">&#10005;</a>
+            <h2>Filters</h2>
+        </div>
+
+        <nav>
+
+            <label for="touch"><span>Color</span></label>
+            <input type="checkbox" id="touch">
+
+            <ul class="slide color">
+                <li><a href="#">White</a></li>
+                <li><a href="#">Silver</a></li>
+                <li><a href="#">Red</a></li>
+                <li><a href="#">Gray</a></li>
+                <li><a href="#">Blue</a></li>
+                <li><a href="#">Green</a></li>
+                <li><a href="#">Black</a></li>
+            </ul>
+
+        </nav>
+
+        <nav>
+
+            <label for="touch"><span>Type</span></label>
+            <input type="checkbox" id="touch">
+
+            <ul class="slide type">
+                <li><a href="#">Pickup</a></li>
+                <li><a href="#">SUV</a></li>
+                <li><a href="#">Coupe</a></li>
+                <li><a href="#">Convertible</a></li>
+                <li><a href="#">Hatchback</a></li>
+            </ul>
+
+        </nav>
+
+        <nav>
+
+            <label for="touch"><span>Transmisson</span></label>
+            <input type="checkbox" id="touch">
+
+            <ul class="slide type">
+                <li><a href="#">Automatic</a></li>
+                <li><a href="#">Manual</a></li>
+                <li><a href="#">Single-Speed</a></li>
+            </ul>
+
+        </nav>
+
+        <nav>
+
+            <label for="touch"><span>Drivetrain</span></label>
+            <input type="checkbox" id="touch">
+
+            <ul class="slide type">
+                <li><a href="#">RWD</a></li>
+                <li><a href="#">AWD</a></li>
+                <li><a href="#">4WD</a></li>
+                <li><a href="#">FWD</a></li>
+            </ul>
+
+        </nav>
+
+        <nav>
+
+            <label for="touch"><span>Fuel Type</span></label>
+            <input type="checkbox" id="touch">
+
+            <ul class="slide type">
+                <li><a href="#">Electric</a></li>
+                <li><a href="#">Gasoline</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <script>
+        function openSelection() {
+            document.getElementById("selectionSB").style.width = "350px";
+
+        }
+
+        function closeSelection() {
+            document.getElementById("selectionSB").style.width = "0";
+
+        }
+    </script>
 
     <!-- Car listings -->
     <section class="listings" id="listings">
