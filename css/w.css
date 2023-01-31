@@ -13,7 +13,6 @@
 
     .selectionSB {
         height: 100%;
-        width: 0;
         position: fixed;
         z-index: 1;
         top: 0;
@@ -23,7 +22,14 @@
         transition: 0.5s;
         padding-top: 60px;
         z-index: 2;
-        box-shadow: var(--box-shadow)
+        box-shadow: var(--box-shadow);
+        justify-content: center;
+        width: 0;
+        margin: auto;
+    }
+
+    .selectionSB button {
+        margin-left: 25%;
     }
 
     .selectionSB .header a {
