@@ -121,7 +121,7 @@
 
         <nav class="slideOne">
 
-            <label for="c"><span>Color</span></label>
+            <label for="c"><span id="colorTab">Color</span></label>
             <input type="checkbox" id="c">
 
             <ul class="slide color">
@@ -138,7 +138,7 @@
 
         <nav>
 
-            <label for="t"><span>Type</span></label>
+            <label for="t"><span id="typeTab">Type</span></label>
             <input type="checkbox" id="t">
 
             <ul class="slide type">
@@ -153,7 +153,7 @@
 
         <nav>
 
-            <label for="tr"><span>Transmission</span></label>
+            <label for="tr"><span id="transmissionTab">Transmission</span></label>
             <input type="checkbox" id="tr">
 
             <ul class="slide type">
@@ -166,7 +166,7 @@
 
         <nav>
 
-            <label for="d"><span>Drivetrain</span></label>
+            <label for="d"><span id="drivetrainTab">Drivetrain</span></label>
             <input type="checkbox" id="d">
 
             <ul class="slide type">
@@ -180,7 +180,7 @@
 
         <nav>
 
-            <label for="f"><span>Fuel Type</span></label>
+            <label for="f"><span id="fuelTab">Fuel Type</span></label>
             <input type="checkbox" id="f">
 
             <ul class="slide type">
@@ -532,26 +532,31 @@
         window.setColor = (input) => {
             selections[0] = colors[input];
             search();
+            document.getElementById("colorTab").innerText = colors[input];
         }
 
         window.setType = (input) => {
             selections[1] = types[input];
             search();
+            document.getElementById("typeTab").innerText = types[input];
         }
 
         window.setTransmission = (input) => {
             selections[2] = transmissions[input];
             search();
+            document.getElementById("transmissionTab").innerText = transmissions[input];
         }
 
         window.setDrivetrain = (input) => {
             selections[3] = drivetrains[input];
             search();
+            document.getElementById("drivetrainTab").innerText = drivetrains[input];
         }
 
         window.setFuel = (input) => {
             selections[4] = fuels[input];
             search();
+            document.getElementById("fuelTab").innerText = fuels[input];
         }
 
         window.clearSelection = () => {
@@ -559,6 +564,13 @@
                 selections[i] = "";
             }
             search();
+
+            document.getElementById("colorTab").innerText = "Color";
+            document.getElementById("typeTab").innerText = "Type";
+            document.getElementById("transmissionTab").innerText = "Transmission";
+            document.getElementById("drivetrainTab").innerText = "Drivetrain";
+            document.getElementById("fuelTab").innerText = "Fuel Type";
+
         }
 
         window.hideAllSlides = () => {
