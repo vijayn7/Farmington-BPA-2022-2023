@@ -60,36 +60,36 @@
         <div class="specs">
             <h1 class="specsHeader" style="font-family: Unbounded, monospace;">Specifications</h1>
             <div class="tb">
-                <h3 class="Manufacturer" id="Manufacturer" style=" font-family: 'Plus Jakarta Sans', sans-serif;">
+                <h3 class="Manufacturer" id="manufacturer" style=" font-family: 'Plus Jakarta Sans', sans-serif;">
                     Manufacturer: xxxxxx</h3>
-                <h3 class="Model" id="Model" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Model: xxxxxx</h3>
-                <h3 class="Year" id="Year" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Year: xxxxxx</h3>
-                <h3 class="Trim" id="Trim" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Trim: xxxxxx</h3>
-                <h3 class="Color" id="Color" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Color: xxxxxx</h3>
-                <h3 class="Size" id="Size" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Size: xxxxxx</h3>
-                <h3 class="# of Seats" id="# of Seats" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> # of
+                <h3 class="Model" id="model" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Model: xxxxxx</h3>
+                <h3 class="Year" id="year" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Year: xxxxxx</h3>
+                <h3 class="Trim" id="trim" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Trim: xxxxxx</h3>
+                <h3 class="Color" id="color" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Color: xxxxxx</h3>
+                <h3 class="Size" id="size" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Size: xxxxxx</h3>
+                <h3 class="# of Seats" id="numSeats" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> # of
                     Seats: xxxxxx</h3>
-                <h3 class="Category" id="Category" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Category:
+                <h3 class="Category" id="category" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Category:
                     xxxxxx</h3>
-                <h3 class="Engine" id="Engine" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Engine: xxxxxx
+                <h3 class="Engine" id="engine" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Engine: xxxxxx
                 </h3>
-                <h3 class="Engine Capacity" id="Engine Capacity" style=" font-family: 'Plus Jakarta Sans', sans-serif;">
-                    Engine Capacity: xxxxxx</h3>
-                <h3 class="Mileage" id="Mileage" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Mileage: xxxxxx
+                <h3 class="fuel Capacity" id="fuelCapacity" style=" font-family: 'Plus Jakarta Sans', sans-serif;">
+                    Fuel Capacity: xxxxxx</h3>
+                <h3 class="Mileage" id="mileage" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Mileage: xxxxxx
                 </h3>
-                <h3 class="Drive Train" id="Drive Train" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Drive
+                <h3 class="Drive Train" id="driveTrain" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Drive
                     Train: xxxxxx</h3>
-                <h3 class="Transmission" id="Transmission" style=" font-family: 'Plus Jakarta Sans', sans-serif;">
+                <h3 class="Transmission" id="transmission" style=" font-family: 'Plus Jakarta Sans', sans-serif;">
                     Transmission: xxxxxx</h3>
-                <h3 class="Weight" id="Weight" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Weight: xxxxxx
+                <h3 class="Weight" id="weight" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Weight: xxxxxx
                 </h3>
-                <h3 class="Overall Height" id="Overall Height" style=" font-family: 'Plus Jakarta Sans', sans-serif;">
+                <h3 class="Overall Height" id="height" style=" font-family: 'Plus Jakarta Sans', sans-serif;">
                     Overall Height: xxxxxx</h3>
-                <h3 class="Overall Length" id="Overall Length" style=" font-family: 'Plus Jakarta Sans', sans-serif;">
+                <h3 class="Overall Length" id="length" style=" font-family: 'Plus Jakarta Sans', sans-serif;">
                     Overall Length: xxxxxx</h3>
-                <h3 class="Overall Width" id="Overall Width" style=" font-family: 'Plus Jakarta Sans', sans-serif;">
+                <h3 class="Overall Width" id="width" style=" font-family: 'Plus Jakarta Sans', sans-serif;">
                     Overall Width: xxxxxx</h3>
-                <h3 class="Features" id="Features" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Features:
+                <h3 class="Features" id="features" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> Features:
                     xxxxxx</h3>
 
             </div>
@@ -190,11 +190,30 @@
 
             var index = get();
             var imageLabel = index + 1;
+
             document.getElementById("carTitle").innerText = data[index].make + " " + data[index].model + " " + data[index].trim;
             document.getElementById("carPrice").innerText = formatCurrency.format(data[index].price);
             document.getElementById("carMileage").innerText = data[index].mileage.toLocaleString('en-US') + " miles";
-            document.getElementById("carImage").src = "./image/cars/" + imageLabel +".png";
-            // document.getElementById("Manufacturer").innerText = "Manufacturer: " + data[index].make;
+            document.getElementById("carImage").src = "./image/cars/" + imageLabel + ".png";
+            document.getElementById("manufacturer").innerText = "Manufacturer: " + data[index].make;
+            document.getElementById("model").innerText = "Model: " + data[index].model;
+            document.getElementById("year").innerText = "Year: " + data[index].year;
+            document.getElementById("trim").innerText = "Trim: " + data[index].trim;
+            document.getElementById("color").innerText = "Color: " + data[index].color;
+            document.getElementById("size").innerText = "Size: " + data[index].size;
+            document.getElementById("numSeats").innerText = "Number of Seats: " + data[index].numSeats;
+            document.getElementById("category").innerText = "Category: " + data[index].category;
+            document.getElementById("engine").innerText = "Engine Type: " + data[index].engineType;
+            document.getElementById("fuelCapacity").innerText = "Fuel Capacity: " + data[index].fuelCapacity;
+            document.getElementById("mileage").innerText = "Mileage: " + data[index].mileage.toLocaleString('en-US') + " miles";
+            document.getElementById("driveTrain").innerText = "DriveTrain: " + data[index].driveTrain;
+            document.getElementById("transmission").innerText = "Transmission: " + data[index].transmission;
+            document.getElementById("weight").innerText = "Weight: " + data[index].weight.toLocaleString('en-US') + " lbs";
+            document.getElementById("height").innerText = "Height: " + data[index].height;
+            document.getElementById("length").innerText = "Length: " + data[index].length;
+            document.getElementById("width").innerText = "Width: " + data[index].width;
+            document.getElementById("features").innerText = "Features: \n" + data[index].features;
+
         }
     </script>
 
