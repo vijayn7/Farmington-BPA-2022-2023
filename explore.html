@@ -84,19 +84,6 @@
 
     </div>
 
-    <!-- Contact Script -->
-    <script>
-        function openCU() {
-            document.getElementById("contactsb").style.width = "350px";
-
-        }
-
-        function closeCU() {
-            document.getElementById("contactsb").style.width = "0";
-
-        }
-    </script>
-
     <!-- Back To Top Button -->
     <button id="backToTopButton" class="backToTopButton" title="Go to top">Top</button>
 
@@ -312,52 +299,53 @@
 
         </nav>
 
+        <div id="apply" onclick="search()"><input type="button" value="Apply Selection" class="btn"></div>
         <button class="btn" onclick="clearSelection()">Clear Selection</button>
 
     </div>
 
-    <script>
-        function openSelection() {
-            document.getElementById("selectionSB").style.width = "350px";
-
-        }
-
-        function closeSelection() {
-            document.getElementById("selectionSB").style.width = "0";
-
-        }
-
+    <script type="module">
+        import data from '../database.json' assert {type: 'json'};
+        console.log(data);
         var selections = ["", "", "", "", ""]; // color, type, transmission, drivetrain, fuel
         var colors = ["white", "silver", "red", "gray", "blue", "green", "black"];
         var types = ["pickup", "suv", "coupe", "convertible", "Hatchback"];
         var transmissions = ["automatic", "manual", "single-speed"];
         var drivetrains = ["RWD", "AWD", "4WD", "FWD"];
         var fuels = ["electric", "gasoline"];
+        var selectionOut = document.getElementById("selectionOutput");
 
-        function setColor(input) {
+        window.setColor = (input) => {
             selections[0] = colors[input];
         }
 
-        function setType(input) {
+        window.setType = (input) => {
             selections[1] = types[input];
         }
 
-        function setTransmission(input) {
-            selections[2] = transmissios[input];
+        window.setTransmission = (input) => {
+            selections[2] = transmissions[input];
+            selectionOut.innerHTML = selections;
         }
 
-        function setDrivetrain(input) {
+        window.setDrivetrain = (input) => {
             selections[3] = drivetrains[input];
+            selectionOut.innerHTML = selections;
         }
 
-        function setFuel(input) {
+        window.setFuel = (input) => {
             selections[4] = fuels[input];
+            selectionOut.innerHTML = selections;
         }
 
-        function clearSelection() {
+        window.clearSelection = () => {
             for (var i = 0; i < selections.length; i++) {
                 selections[i] = "";
             }
+        }
+
+        window.search = () => {
+            alert(selection[1]);
         }
     </script>
 
@@ -699,6 +687,26 @@
             document.getElementById(id).style.background = slate;
             document.getElementById('typeAll').style.background = slate;
             document.getElementById('transAll').style.background = slate;
+        }
+
+        function openSelection() {
+            document.getElementById("selectionSB").style.width = "350px";
+
+        }
+
+        function closeSelection() {
+            document.getElementById("selectionSB").style.width = "0";
+
+        }
+
+        function openCU() {
+            document.getElementById("contactsb").style.width = "350px";
+
+        }
+
+        function closeCU() {
+            document.getElementById("contactsb").style.width = "0";
+
         }
     </script>
 
