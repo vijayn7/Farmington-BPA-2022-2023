@@ -1080,9 +1080,6 @@ hr.solid {
     padding-top: 5rem;
     padding-left: 4.5rem;
     padding-bottom: 2rem;
-
-
-
 }
 
 .carInfo .specs h3 {
@@ -1092,7 +1089,9 @@ hr.solid {
     line-height: 3rem;
 }
 
-
+.carInfo .specs hr {
+    margin-top: 3rem;
+}
 
 .representatives {
     background-color: #eee;
