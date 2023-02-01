@@ -170,12 +170,12 @@
                     <img src="image/cars/4.png" alt="">
                     <div class="content">
                         <h3>Audi RS5 Sportback</h3>
-                    <div class="price"> <span>price : </span>$58,930/- </div>
-                    <p>
-                        2021 -
-                        Automatic -
-                        67,950 miles
-                    </p>
+                        <div class="price"> <span>price : </span>$58,930/- </div>
+                        <p>
+                            2021 -
+                            Automatic -
+                            67,950 miles
+                        </p>
                         <a href="#" class="btn">check out</a>
                     </div>
                 </div>
@@ -184,12 +184,12 @@
                     <img src="image/cars/6.png" alt="">
                     <div class="content">
                         <h3>BMW M4 Competition</h3>
-                    <div class="price"> <span>price : </span> $62,789/- </div>
-                    <p>
-                        2022 -
-                        Automatic -
-                        58,760 miles
-                    </p>
+                        <div class="price"> <span>price : </span> $62,789/- </div>
+                        <p>
+                            2022 -
+                            Automatic -
+                            58,760 miles
+                        </p>
                         <a href="#" class="btn">check out</a>
                     </div>
                 </div>
@@ -198,12 +198,12 @@
                     <img src="image/cars/11.png" alt="">
                     <div class="content">
                         <h3>Ford Mustang GT Convertible</h3>
-                    <div class="price"> <span>price : </span> $43,105/- </div>
-                    <p>
-                        2022 -
-                        Manual -
-                        670 miles
-                    </p>
+                        <div class="price"> <span>price : </span> $43,105/- </div>
+                        <p>
+                            2022 -
+                            Manual -
+                            670 miles
+                        </p>
                         <a href="#" class="btn">check out</a>
                     </div>
                 </div>
@@ -212,12 +212,12 @@
                     <img src="image/cars/14.png" alt="">
                     <div class="content">
                         <h3>Tesla Model S Long Range</h3>
-                    <div class="price"> <span>price : </span> $45,999/- </div>
-                    <p>
-                        2022 -
-                        Automatic -
-                        12,849 miles
-                    </p>
+                        <div class="price"> <span>price : </span> $45,999/- </div>
+                        <p>
+                            2022 -
+                            Automatic -
+                            12,849 miles
+                        </p>
                         <a href="#" class="btn">check out</a>
                     </div>
                 </div>
@@ -426,8 +426,18 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/backToTop.js"></script>
     <script src="js/script.js"></script>
-    <script type="module" src="/js/slider.js"></script>
 
+    <!-- carinfo script -->
+    <script>
+        function go(index) {
+            var params = new URLSearchParams();
+            params.append("index", index);
+
+            var url = "/carinfo.html?" + params.toString();
+            location.href = url;
+        }
+    </script>
+    
 </body>
 
 </html>

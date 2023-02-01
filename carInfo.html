@@ -50,10 +50,10 @@
 
             <h1 class="carTitle" id="carTitle" style="font-family: Unbounded, monospace;"> White Ford F-150 XL </h1>
             <h1 class="carPrice" id="carPrice" style="font-family: Unbounded, monospace;"> $30,000 </h1>
-            <h3 class="carTitle2" id="carTitle2" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> 38,908 Miles
+            <h3 class="carTitle2" id="carMileage" style=" font-family: 'Plus Jakarta Sans', sans-serif;"> 38,908 Miles
             </h3>
 
-            <img src="/image/cars/10.png" style="width: 80%;">
+            <img id="carImage" src="/image/cars/1.png" style="width: 80%;">
 
         </div>
 
@@ -111,25 +111,28 @@
 
     </section>
 
-    <span id="close-login-form" class="fas fa-times"></span>
+    <!-- Login Form -->
+    <div class="login-form-container">
 
-    <form action="">
-        <h3>login</h3>
-        <input type="email" placeholder="email" class="box">
-        <input type="password" placeholder="password" class="box">
-        <p> forgot your password? <a href="#">click here</a> </p>
-        <input type="submit" value="login" class="btn">
-        <p>or login with:</p>
-        <div class="buttons">
-            <a href="#" class="btn"> google </a>
-            <a href="#" class="btn"> facebook </a>
-        </div>
-        <p> don't have an account? <a href="#">create one</a> </p>
-    </form>
+        <span id="close-login-form" class="fas fa-times"></span>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <p> forgot your password? <a href="#">click here</a> </p>
+            <input type="submit" value="login" class="btn">
+            <p>or login with:</p>
+            <div class="buttons">
+                <a href="#" class="btn"> google </a>
+                <a href="#" class="btn"> facebook </a>
+            </div>
+            <p> don't have an account? <a href="#">create one</a> </p>
+        </form>
 
     </div>
 
-    <section class="carInfo" id="carInfo"></section>
+    <input type="button" class="btn" value="wwwwwwwww" onclick="setInfo()" />
 
     <!-- Footer -->
     <section class="footer" id="footer">
@@ -170,6 +173,30 @@
     <!-- Import JavaScript -->
     <script src="js/script.js"></script>
     <script src="js/backToTop.js"></script>
+
+    <script type="module">
+        import data from '../database.json' assert {type: 'json'};
+        const formatCurrency = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+        });
+
+        window.get = () => {
+            var param = new URLSearchParams(window.location.search);
+            return param.get("index") - 1;
+        }
+
+        window.setInfo = () => {
+
+            var index = get();
+            var imageLabel = index + 1;
+            document.getElementById("carTitle").innerText = data[index].make + " " + data[index].model + " " + data[index].trim;
+            document.getElementById("carPrice").innerText = formatCurrency.format(data[index].price);
+            document.getElementById("carMileage").innerText = data[index].mileage.toLocaleString('en-US') + " miles";
+            document.getElementById("carImage").src = "./image/cars/" + imageLabel +".png";
+            // document.getElementById("Manufacturer").innerText = "Manufacturer: " + data[index].make;
+        }
+    </script>
 
 </body>
 
