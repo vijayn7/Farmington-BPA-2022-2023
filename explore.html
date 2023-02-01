@@ -306,14 +306,12 @@
 
     <script type="module">
         import data from '../database.json' assert {type: 'json'};
-        console.log(data);
         var selections = ["", "", "", "", ""]; // color, type, transmission, drivetrain, fuel
-        var colors = ["white", "silver", "red", "gray", "blue", "green", "black"];
-        var types = ["pickup", "suv", "coupe", "convertible", "Hatchback"];
-        var transmissions = ["automatic", "manual", "single-speed"];
+        var colors = ["White", "Silver", "Red", "Gray", "Blue", "Green", "Black"];
+        var types = ["Pickup", "Suv", "Coupe", "Convertible", "Hatchback"];
+        var transmissions = ["Automatic", "Manual", "Single-speed"];
         var drivetrains = ["RWD", "AWD", "4WD", "FWD"];
-        var fuels = ["electric", "gasoline"];
-        var selectionOut = document.getElementById("selectionOutput");
+        var fuels = ["Electric", "Gas"];
 
         window.setColor = (input) => {
             selections[0] = colors[input];
@@ -325,17 +323,14 @@
 
         window.setTransmission = (input) => {
             selections[2] = transmissions[input];
-            selectionOut.innerHTML = selections;
         }
 
         window.setDrivetrain = (input) => {
             selections[3] = drivetrains[input];
-            selectionOut.innerHTML = selections;
         }
 
         window.setFuel = (input) => {
             selections[4] = fuels[input];
-            selectionOut.innerHTML = selections;
         }
 
         window.clearSelection = () => {
@@ -345,7 +340,31 @@
         }
 
         window.search = () => {
-            alert(selection[1]);
+            var matches = [];
+            var indexToTag = {
+                "1": "w",
+            }
+            for (var i = 0; i < data.length; i++) {
+                var selectionsMatched = 0;
+                for (var j = 0; j < selections.length; j++) {
+                    if (selections[j] == '') {
+                        selectionsMatched++;
+                    } else if (data[i].color == selections[j]) {
+                        selectionsMatched++;
+                    } else if (data[i].category == selections[j]) {
+                        selectionsMatched++;
+                    } else if (data[i].transmission == selections[j]) {
+                        selectionsMatched++;
+                    } else if (data[i].driveTrain == selections[j]) {
+                        selectionsMatched++;
+                    } else if (data[i].engineType == selections[j]) {
+                        selectionsMatched++;
+                    }
+                }
+                if (selectionsMatched == 5) {
+                    matches.push(i + 1);
+                }
+            }
         }
     </script>
 
@@ -354,7 +373,7 @@
 
         <div class="row">
 
-            <div class="box column red crossover automatic">
+            <div id="slide1" class="box column red crossover automatic">
                 <img src="image/cars/1.png" alt="">
                 <div class="content">
                     <h3>Kia Sportage</h3>
@@ -368,7 +387,7 @@
                 </div>
             </div>
 
-            <div class="box column gray car automatic">
+            <div id="slide2" class="box column gray car automatic">
                 <img src="image/cars/2.png" alt="">
                 <div class="content">
                     <h3>Buick Verano GS</h3>
@@ -382,7 +401,7 @@
                 </div>
             </div>
 
-            <div class="box column white crossover automatic">
+            <div id="slide3" class="box column white crossover automatic">
                 <img src="image/cars/3.png" alt="">
                 <div class="content">
                     <h3>Chevrolet Equinox Premier</h3>
@@ -396,7 +415,7 @@
                 </div>
             </div>
 
-            <div class="box column blue convertible manual">
+            <div id="slide5" class="box column blue convertible manual">
                 <img src="image/cars/4.png" alt="">
                 <div class="content">
                     <h3>Mercedes Benz SL-Class</h3>
@@ -410,7 +429,7 @@
                 </div>
             </div>
 
-            <div class="box column orange car automatic">
+            <div id="slide5" class="box column orange car automatic">
                 <img src="image/cars/5.png" alt="">
                 <div class="content">
                     <h3>Ford Focus ST</h3>
@@ -424,7 +443,7 @@
                 </div>
             </div>
 
-            <div class="box column blue crossover automatic">
+            <div id="slide6" class="box column blue crossover automatic">
                 <img src="image/cars/6.png" alt="">
                 <div class="content">
                     <h3>Kia Sportage</h3>
@@ -438,7 +457,7 @@
                 </div>
             </div>
 
-            <div class="box column white crossover automatic">
+            <div id="slide7" class="box column white crossover automatic">
                 <img src="image/cars/7.png" alt="">
                 <div class="content">
                     <h3>MG HS</h3>
@@ -452,7 +471,7 @@
                 </div>
             </div>
 
-            <div class="box column gray sportsCar manual">
+            <div id="slide8" class="box column gray sportsCar manual">
                 <img src="image/cars/8.png" alt="">
                 <div class="content">
                     <h3>Porsche Panamera</h3>
@@ -466,7 +485,7 @@
                 </div>
             </div>
 
-            <div class="box column blue crossover automatic">
+            <div id="slide9" class="box column blue crossover automatic">
                 <img src="image/cars/9.png" alt="">
                 <div class="content">
                     <h3>Audi e-tron</h3>
@@ -480,7 +499,7 @@
                 </div>
             </div>
 
-            <div class="box column black sportsCar convertible manual">
+            <div id="slide10" class="box column black sportsCar convertible manual">
                 <img src="image/cars/10.png" alt="">
                 <div class="content">
                     <h3>Porsche Boxster S</h3>
@@ -494,7 +513,7 @@
                 </div>
             </div>
 
-            <div class="box column blue car automatic">
+            <div id="slide11" class="box column blue car automatic">
                 <img src="image/cars/11.png" alt="">
                 <div class="content">
                     <h3>Buick Avista</h3>
@@ -508,7 +527,7 @@
                 </div>
             </div>
 
-            <div class="box column gray crossover manual">
+            <div id="slide12" class="box column gray crossover manual">
                 <img src="image/cars/12.png" alt="">
                 <div class="content">
                     <h3>Porsche Cayman</h3>
@@ -522,7 +541,7 @@
                 </div>
             </div>
 
-            <div class="box column black other crossover automatic">
+            <div id="slide13" class="box column black other crossover automatic">
                 <img src="image/cars/13.png" alt="">
                 <div class="content">
                     <h3>Ford Interceptor</h3>
@@ -536,7 +555,7 @@
                 </div>
             </div>
 
-            <div class="box column yellow sportsCar manual">
+            <div id="slide14" class="box column yellow sportsCar manual">
                 <img src="image/cars/14.png" alt="">
                 <div class="content">
                     <h3>Porsche Cayman</h3>
@@ -550,7 +569,7 @@
                 </div>
             </div>
 
-            <div class="box column white sportsCar manual">
+            <div id="slide15" class="box column white sportsCar manual">
                 <img src="image/cars/15.png" alt="">
                 <div class="content">
                     <h3>Porsche Panamera</h3>
@@ -564,7 +583,7 @@
                 </div>
             </div>
 
-            <div class="box column red other truck automatic">
+            <div id="slide16" class="box column red other truck automatic">
                 <img src="image/cars/16.png" alt="">
                 <div class="content">
                     <h3>Firetruck</h3>
@@ -578,7 +597,7 @@
                 </div>
             </div>
 
-            <div class="box column gray car sportsCar automatic">
+            <div id="slide17" class="box column gray car sportsCar automatic">
                 <img src="image/cars/17.png" alt="">
                 <div class="content">
                     <h3>Chevrolet Camaro</h3>
@@ -592,7 +611,7 @@
                 </div>
             </div>
 
-            <div class="box column white truck automatic">
+            <div id="slide18" class="box column white truck automatic">
                 <img src="image/cars/18.png" alt="">
                 <div class="content">
                     <h3>Toyota Tundra</h3>
