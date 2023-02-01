@@ -4,10 +4,10 @@
 @import url('https://fonts.gstatic.com');
 @import url('https://fonts.googleapis.com');
 
-:root{
-    --slate:#35605a;
-    --green:#002517;
-    --light-color:#666;
+:root {
+    --slate: #35605a;
+    --green: #002517;
+    --light-color: #666;
     --yellow: #E88321;
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     --border: .1rem solid rgba(0, 0, 0, .1);
@@ -263,6 +263,7 @@ section {
     z-index: 2;
     box-shadow: var(--box-shadow)
 }
+
 .contactsb .header a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -282,8 +283,8 @@ section {
     right: 6px;
     font-size: 20px;
     margin-bottom: 20px;
-  }
- 
+}
+
 #contact {
     cursor: pointer;
 }
@@ -363,12 +364,12 @@ section {
 
 .contactsb .smcards {
     width: 33rem;
-  height: 254px;
-  border-radius: 4px;
-  color: #eee;
-  display: flex;
-  gap: 5px;
-  padding: .4em;
+    height: 254px;
+    border-radius: 4px;
+    color: #eee;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
     margin-top: 49rem;
     margin-left: 1.3rem;
 }
@@ -658,11 +659,11 @@ section {
     background: var(--slate);
 }
 
-.vehicles .vehicles-slider{
+.vehicles .vehicles-slider {
     padding-bottom: 5rem;
 }
 
-.vehicles .vehicles-slider .box{
+.vehicles .vehicles-slider .box {
     text-align: center;
 }
 
@@ -958,18 +959,18 @@ section {
 .carInfo {
     background-color: #eee;
     padding-top: 15rem;
-   
+
 }
 
-.carInfo .content{
+.carInfo .content {
     background-color: #fff;
 }
 
 .carInfo .content .carTitle {
     font-size: 4rem;
-   padding-top: 6rem;
-   padding-left: 5rem;
-   position: absolute;
+    padding-top: 6rem;
+    padding-left: 5rem;
+    position: absolute;
 }
 
 .carInfo .content .carPrice {
@@ -980,25 +981,25 @@ section {
 
 .carInfo .content .carTitle2 {
     font-size: 2rem;
-   padding-top: .75rem;
-   padding-left: 5.3rem;
-   
-   position: relative;
+    padding-top: .75rem;
+    padding-left: 5.3rem;
+
+    position: relative;
 }
 
 .carInfo {
     display: flex;
     flex-wrap: wrap;
-    gap:3rem;
+    gap: 3rem;
     width: 100%;
 }
 
 .carInfo img {
-   padding-left: 23rem;
- 
+    padding-left: 23rem;
+
 }
 
-.carInfo .content{
+.carInfo .content {
     background-color: #fff;
     text-align: left;
     padding-bottom: 5rem;
@@ -1010,7 +1011,7 @@ section {
 
 .carInfo .content .row .box h1 {
     font-size: 2rem;
-    
+
 }
 
 .carInfo .content .row .box .monthly {
@@ -1018,7 +1019,7 @@ section {
     background-color: var(--green);
 }
 
-.carInfo .specs{
+.carInfo .specs {
     background-color: #fff;
     text-align: left;
     padding-bottom: 5rem;
@@ -1026,56 +1027,56 @@ section {
     width: 100%;
     border: var(--border);
     box-shadow: var(--box-shadow);
-   
-    }
+
+}
 
 .carInfo .specs .specsHeader {
     font-size: 2.5rem;
-   padding-top: 6rem;
-   padding-left: 5rem;
-   padding-bottom: 1rem;
+    padding-top: 6rem;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
 
 }
 
 .carInfo .specs .tb {
-column-count: 3;
-position: relative;
-padding-bottom: 6.5rem ;
+    column-count: 3;
+    position: relative;
+    padding-bottom: 6.5rem;
 
 }
 
 
 .carInfo .specs .tb h3 {
     padding-top: 5rem;
-   padding-left: 7rem;
-   font-size: 1.4rem;
-   display: flex;
- flex-direction: column;
- position: relative;
- color: rgb(75, 75, 75);
+    padding-left: 7rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: rgb(75, 75, 75);
 }
 
 hr.solid {
     border-top: 3px solid #bbb;
     width: 94%;
-margin: auto;
-   
-  }
+    margin: auto;
+
+}
 
 
 .carInfo .specs .description {
     font-size: 2.5rem;
-   padding-top: 5rem;
-   padding-left: 4.5rem;
-   padding-bottom: 2rem;
-    
+    padding-top: 5rem;
+    padding-left: 4.5rem;
+    padding-bottom: 2rem;
+
 
 
 }
 
 .carInfo .specs h3 {
     padding-left: 4.5rem;
-    padding-right: 5rem ;
+    padding-right: 5rem;
     font-size: 1.5rem;
     line-height: 3rem;
 }
@@ -1151,7 +1152,7 @@ margin: auto;
     border: .3rem solid #002517;
 }
 
-.contact{
+.contact {
     padding-top: 10rem;
 
 }
