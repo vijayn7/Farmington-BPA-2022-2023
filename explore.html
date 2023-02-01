@@ -209,7 +209,7 @@
                         Automatic -
                         17,650 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(1)">check out</a>
                 </div>
             </div>
 
@@ -223,7 +223,7 @@
                         Automatic -
                         25,670 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(2)">check out</a>
                 </div>
             </div>
 
@@ -237,7 +237,7 @@
                         Automatic -
                         29,700 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(3)">check out</a>
                 </div>
             </div>
 
@@ -251,7 +251,7 @@
                         Automatic -
                         67,950 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(4)">check out</a>
                 </div>
             </div>
 
@@ -265,7 +265,7 @@
                         Automatic -
                         63,370 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(5)">check out</a>
                 </div>
             </div>
 
@@ -279,7 +279,7 @@
                         Automatic -
                         58,760 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(6)">check out</a>
                 </div>
             </div>
 
@@ -293,7 +293,7 @@
                         Automatic -
                         27,690 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(7)">check out</a>
                 </div>
             </div>
 
@@ -307,7 +307,7 @@
                         Automatic -
                         25,649 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(8)">check out</a>
                 </div>
             </div>
 
@@ -321,7 +321,7 @@
                         Automatic -
                         17,830 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(9)">check out</a>
                 </div>
             </div>
 
@@ -335,7 +335,7 @@
                         Manual -
                         11,449 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(10)">check out</a>
                 </div>
             </div>
 
@@ -349,7 +349,7 @@
                         Manual -
                         670 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(11)">check out</a>
                 </div>
             </div>
 
@@ -363,7 +363,7 @@
                         Manual -
                         857 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(12)">check out</a>
                 </div>
             </div>
 
@@ -377,7 +377,7 @@
                         Automatic -
                         523 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(13)">check out</a>
                 </div>
             </div>
 
@@ -391,7 +391,7 @@
                         Automatic -
                         12,849 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(14)">check out</a>
                 </div>
             </div>
 
@@ -405,7 +405,7 @@
                         Automatic -
                         32,789 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(15)">check out</a>
                 </div>
             </div>
 
@@ -419,7 +419,7 @@
                         Single Speed -
                         38,769 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(16)">check out</a>
                 </div>
             </div>
 
@@ -433,7 +433,7 @@
                         Single Speed -
                         26,780 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(17)">check out</a>
                 </div>
             </div>
 
@@ -447,7 +447,7 @@
                         Single Speed -
                         67,860 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(18)">check out</a>
                 </div>
             </div>
 
@@ -517,6 +517,14 @@
         function closeCU() {
             document.getElementById("contactsb").style.width = "0";
 
+        }
+
+        function go(index) {
+            var params = new URLSearchParams();
+            params.append("index", index);
+
+            var url = "/carinfo.html?" + params.toString();
+            location.href = url;
         }
     </script>
 
