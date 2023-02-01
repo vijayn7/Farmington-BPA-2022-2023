@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com');
 
 :root{
-    --slate:#35605A;
+    --slate:#35605a;
     --green:#002517;
     --light-color:#666;
     --yellow: #E88321;
@@ -805,7 +805,7 @@ section{
 .carInfo .content .carPrice {
     font-size: 4rem;
     padding-top: 6rem;
-    padding-left: 125rem;
+    padding-left: 145rem;
 }
 
 .carInfo .content .carTitle2 {
@@ -816,10 +816,10 @@ section{
    position: relative;
 }
 
-.carInfo .row{
+.carInfo {
     display: flex;
     flex-wrap: wrap;
-    gap:6rem;
+    gap:3rem;
     width: 100%;
 }
 
@@ -828,7 +828,7 @@ section{
  
 }
 
-.carInfo .content .row .box{
+.carInfo .content{
     background-color: #fff;
     text-align: left;
     padding-bottom: 5rem;
@@ -848,7 +848,67 @@ section{
     background-color: var(--green);
 }
 
+.carInfo .specs{
+    background-color: #fff;
+    text-align: left;
+    padding-bottom: 5rem;
+    margin: auto;
+    width: 100%;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+   
+    }
 
+.carInfo .specs .specsHeader {
+    font-size: 2.5rem;
+   padding-top: 6rem;
+   padding-left: 5rem;
+   padding-bottom: 1rem;
+
+}
+
+.carInfo .specs .tb {
+column-count: 3;
+position: relative;
+padding-bottom: 6.5rem ;
+
+}
+
+
+.carInfo .specs .tb h3 {
+    padding-top: 5rem;
+   padding-left: 7rem;
+   font-size: 1.4rem;
+   display: flex;
+ flex-direction: column;
+ position: relative;
+ color: rgb(75, 75, 75);
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+    width: 94%;
+margin: auto;
+   
+  }
+
+
+.carInfo .specs .description {
+    font-size: 2.5rem;
+   padding-top: 5rem;
+   padding-left: 4.5rem;
+   padding-bottom: 2rem;
+    
+
+
+}
+
+.carInfo .specs h3 {
+    padding-left: 4.5rem;
+    padding-right: 5rem ;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
 
 
 
