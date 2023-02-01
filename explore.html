@@ -8,7 +8,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="image/favicon.png">
-    
+
     <!-- Import Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -20,504 +20,614 @@
 
 <body>
 
-<!-- Navbar -->
-<header class="header">
-    <div id="menu-btn" class="fas fa-bars"></div>
+    <!-- Navbar -->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
 
-    <a href="#" class="logo" ><img src="image/logo.png" alt="AutoWizard Logo" style="float: right;  padding-left: 10px; padding-bottom: 3px; width: 43px;height:35px;">AutoWizard</a>
+        <a href="index.html" class="logo"><img src="image/logo.png" alt="AutoWizard Logo"
+                style="float: right;  padding-left: 10px; padding-bottom: 3px; width: 43px;height:35px;">AutoWizard</a>
 
-    <nav class="navbar">
-        <a href="index.html#home">home</a>
-        <a href="index.html#vehicles">popular</a>
-        <a href="index.html#reviews">reviews</a>
-        <a href="index.html#contact">contact</a>
-        <a href='explore.html'>explore</a>
-        <a href='index.html#aboutUs'>About Us</a>
-        <a href='salesRepresentatives.html'>Representatives</a>
-    </nav>
+        <nav class="navbar">
+            <a href="index.html#home">home</a>
+            <a href='explore.html'>explore</a>
+            <a href='salesRepresentatives.html'>representatives</a>
+            <a><span id="contact"><span onclick="openCU()">Contact us</span></span>
+        </nav>
 
-    <div id="login-btn">
-        <button class="btn">login</button>
-    </div>
-</header> 
-
-<!-- Back To Top Button -->
-<button id="backToTopButton" class="backToTopButton" title="Go to top">Top</button>
-
-<!-- Login Form -->
-<div class="login-form-container">
-
-    <span id="close-login-form" class="fas fa-times"></span>
-
-    <form action="">
-        <h3>login</h3>
-        <input type="email" placeholder="email" class="box">
-        <input type="password" placeholder="password" class="box">
-        <p> forgot your password? <a href="#">click here</a> </p>
-        <input type="submit" value="login" class="btn">
-        <p>or login with:</p>
-        <div class="buttons">
-            <a href="#" class="btn"> google </a>
-            <a href="#" class="btn"> facebook </a>
+        <div id="login-btn">
+            <button class="btn">login</button>
         </div>
-        <p> don't have an account? <a href="#">create one</a> </p>
-    </form>
+    </header>
 
-</div>
-
-<!-- Filter selector -->
-<section class="selection" id="selection" style="margin-top: 100px;">
-    <div class="row">
-        <div id="filters">
-            <h3>Color:</h3>
-            <div data-toggle="buttons">
-
-              <label  style="background: #35605A;" id="colorAll" class="btn active">
-                <input type="radio" name="color" value="all" onclick="color('colorAll')">
-                Show all
-              </label>
-
-              <label id="redOption" class="btn">
-                <input type="radio" name="color" value="red" onclick="color('redOption')">
-                Red
-              </label>
-
-              <label id="whiteOption" class="btn">
-                <input type="radio" name="color" value="white" onclick="color('whiteOption')">
-                White
-              </label>
-
-              <label id="blueOption" class="btn">
-                <input type="radio" name="color" value="blue" onclick="color('blueOption')">
-                Blue
-              </label>
-
-              <label id="orangeOption" class="btn">
-                <input type="radio" name="color" value="orange" onclick="color('orangeOption')">
-                Orange
-              </label>
-
-              <label id="grayOption" class="btn">
-                <input type="radio" name="color" value="gray" onclick="color('grayOption')">
-                Gray
-              </label>
-
-              <label id="blackOption" class="btn">
-                <input type="radio" name="color" value="black" onclick="color('blackOption')">
-                Black
-              </label>
-
-              <label id="yellowOption" class="btn">
-                <input type="radio" name="color" value="yellow" onclick="color('yellowOption')">
-                yellow
-              </label>
-
-            </div>
-
-            <h3>Type:</h3>
-            <div data-toggle="buttons">
-
-                <label id="typeAll" class="btn active" id="typeAll" style="background-color: #35605A;">
-                  <input type="radio" name="color" value="all" onclick="carType('typeAll')">
-                  Show all
-                </label>
-  
-                <label id="sportsCarOption" class="btn">
-                  <input type="radio" name="color" value="sportsCar" onclick="carType('sportsCarOption')">
-                  Sports Cars
-                </label>
-  
-                <label id="carOption" class="btn">
-                  <input type="radio" name="color" value="car" onclick="carType('carOption')">
-                  Cars
-                </label>
-  
-                <label id="crossoverOption" class="btn">
-                  <input type="radio" name="color" value="crossover" onclick="carType('crossoverOption')">
-                  Crossovers
-                </label>
-  
-                <label id="truckOption" class="btn">
-                  <input type="radio" name="color" value="truck" onclick="carType('truckOption')">
-                  Trucks
-                </label>
-  
-                <label id="convertibleOption" class="btn">
-                  <input type="radio" name="color" value="convertible" onclick="carType('convertibleOption')">
-                  Convertibles
-                </label>
-  
-                <label id="otherOption" class="btn">
-                  <input type="radio" name="color" value="other" onclick="carType('otherOption')">
-                  Other
-                </label>
-  
-            </div>
-
-            <h3>Transmisson:</h3>
-            <div data-toggle="buttons">
-
-                <label id="transAll" class="btn active" id="transAll" style="background-color: #35605A;">
-                  <input type="radio" name="color" value="all" onclick="transmisson('transAll')">
-                  Show all
-                </label>
-  
-                <label id="automatic" class="btn">
-                  <input type="radio" name="color" value="automatic" onclick="transmisson('automatic')">
-                  Automatic
-                </label>
-  
-                <label id="manual" class="btn">
-                  <input type="radio" name="color" value="manual" onclick="transmisson('manual')">
-                  Manual
-                </label>
-  
-            </div>
-          </div>
-    </div>
-</section>
-
-<!-- Car listings -->
-<section class="listings" id="listings">
-
-    <div class="row">
-
-        <div class="box column red crossover automatic">
-            <img src="image/cars/1.png" alt="">
-            <div class="content">
-                <h3>Kia Sportage</h3>
-                <div class="price"> <span>price : </span> $24,000/- </div>
-                <p>
-                    2022 -
-                    Automatic -
-                    109,280 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
+    <!-- Contact Us -->
+    <div id="contactsb" class="contactsb">
+        <div class="header">
+            <a href="javascript:void(0)" class="close" onclick="closeCU()">&#10005;</a>
+            <h2>Contact Us</h2>
         </div>
 
-        <div class="box column gray car automatic">
-            <img src="image/cars/2.png" alt="">
-            <div class="content">
-                <h3>Buick Verano GS</h3>
-                <div class="price"> <span>price : </span> $10,000/- </div>
-                <p>
-                    2016 -
-                    Automatic -
-                    13,510 miles
-                </p>
-                <a href="#" class="btn">check out</a>
+        <a href="ContactUs.html">
+            <div class="contactform">
+                <h2> Contact Form</h2>
+
             </div>
+        </a>
+
+        <a href="https://goo.gl/maps/1Y8VdzrFSqTUoBCW7">
+            <div class="contact-map">
+                <h2> Visit Us in person</h2>
+
+            </div>
+        </a>
+
+        <div class="smcards">
+            <p style="background-image: url(/image/backgrounds/insta.png); background-size: cover;"
+                onClick="location.href='https://www.instagram.com/farmington_bpa/'"><span>Instagram</span></p>
+            <p style="background-image: url(/image/backgrounds/twitter.png); background-size: cover;"
+                onClick="location.href='https://twitter.com/MichiganBPA'"><span>Twitter</span></p>
+            <p style="background-image: url(/image/backgrounds/facebook.jpg); background-size: cover;"
+                onClick="location.href='https://www.facebook.com/michiganbpa/'"><span>Facebook</span></p>
+        </div>
+        <div class="HOO">
+            <b>
+                <h1 class="heading hoursHeading">Hours Of Operation:</h1>
+            </b>
+
+            <p>Monday - Friday: 9am - 9pm</p>
+            <p>Saturday - Sunday: 7am - 5pm</p>
+
+
         </div>
 
-        <div class="box column white crossover automatic">
-            <img src="image/cars/3.png" alt="">
-            <div class="content">
-                <h3>Chevrolet Equinox Premier</h3>
-                <div class="price"> <span>price : </span> $27,299/- </div>
-                <p>
-                    2020 -
-                    Automatic -
-                    13,000 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
 
-        <div class="box column blue convertible manual">
-            <img src="image/cars/4.png" alt="">
-            <div class="content">
-                <h3>Mercedes Benz SL-Class</h3>
-                <div class="price"> <span>price : </span> $23,499/- </div>
-                <p>
-                    2017 -
-                    Manual -
-                    59,000 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box column orange car automatic">
-            <img src="image/cars/5.png" alt="">
-            <div class="content">
-                <h3>Ford Focus ST</h3>
-                <div class="price"> <span>price : </span> $15,497/- </div>
-                <p>
-                    2017 -
-                    Automatic -
-                    93,000 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box column blue crossover automatic">
-            <img src="image/cars/6.png" alt="">
-            <div class="content">
-                <h3>Kia Sportage</h3>
-                <div class="price"> <span>price : </span> $23,909/- </div>
-                <p>
-                    2021 -
-                    Automatic -
-                    20,000 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box column white crossover automatic">
-            <img src="image/cars/7.png" alt="">
-            <div class="content">
-                <h3>MG HS</h3>
-                <div class="price"> <span>price : </span> $42,990/- </div>
-                <p>
-                    2020 -
-                    Automatic -
-                    11,060 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box column gray sportsCar manual">
-            <img src="image/cars/8.png" alt="">
-            <div class="content">
-                <h3>Porsche Panamera</h3>
-                <div class="price"> <span>price : </span> $24,995/- </div>
-                <p>
-                    2014 -
-                    Manual -
-                    123,478 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box column blue crossover automatic">
-            <img src="image/cars/9.png" alt="">
-            <div class="content">
-                <h3>Audi e-tron</h3>
-                <div class="price"> <span>price : </span> $62,000/- </div>
-                <p>
-                    2019 -
-                    Automatic -
-                    8,670 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box column black sportsCar convertible manual">
-            <img src="image/cars/10.png" alt="">
-            <div class="content">
-                <h3>Porsche Boxster S</h3>
-                <div class="price"> <span>price : </span> $43,590/- </div>
-                <p>
-                    2014 -
-                    Manual -
-                    31,671 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box column blue car automatic">
-            <img src="image/cars/11.png" alt="">
-            <div class="content">
-                <h3>Buick Avista</h3>
-                <div class="price"> <span>price : </span> $31,295/- </div>
-                <p>
-                    2022 -
-                    Automatic -
-                    20,910 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box column gray crossover manual">
-            <img src="image/cars/12.png" alt="">
-            <div class="content">
-                <h3>Porsche Cayman</h3>
-                <div class="price"> <span>price : </span> $45,000/- </div>
-                <p>
-                    2015 -
-                    Manual -
-                    19,965 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box column black other crossover automatic">
-            <img src="image/cars/13.png" alt="">
-            <div class="content">
-                <h3>Ford Interceptor</h3>
-                <div class="price"> <span>price : </span> $17,950/- </div>
-                <p>
-                    2017 -
-                    Automatic -
-                    101,375 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box column yellow sportsCar manual">
-            <img src="image/cars/14.png" alt="">
-            <div class="content">
-                <h3>Porsche Cayman</h3>
-                <div class="price"> <span>price : </span> $45,000/- </div>
-                <p>
-                    2015 -
-                    Manual -
-                    19,965 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box column white sportsCar manual">
-            <img src="image/cars/15.png" alt="">
-            <div class="content">
-                <h3>Porsche Panamera</h3>
-                <div class="price"> <span>price : </span> $26,495/- </div>
-                <p>
-                    2010 -
-                    Manual -
-                    76,588 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box column red other truck automatic">
-            <img src="image/cars/16.png" alt="">
-            <div class="content">
-                <h3>Firetruck</h3>
-                <div class="price"> <span>price : </span> $250,000/- </div>
-                <p>
-                    2021 -
-                    Automatic -
-                    102,086 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box column gray car sportsCar automatic">
-            <img src="image/cars/17.png" alt="">
-            <div class="content">
-                <h3>Chevrolet Camaro</h3>
-                <div class="price"> <span>price : </span> $39,499/- </div>
-                <p>
-                    2018 -
-                    Automatic -
-                    25,185 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
-
-        <div class="box column white truck automatic">
-            <img src="image/cars/18.png" alt="">
-            <div class="content">
-                <h3>Toyota Tundra</h3>
-                <div class="price"> <span>price : </span> $9,021/- </div>
-                <p>
-                    2009 -
-                    Automatic -
-                    277,114 miles
-                </p>
-                <a href="#" class="btn">check out</a>
-            </div>
-        </div>
 
     </div>
 
-</section>
+    <!-- Back To Top Button -->
+    <button id="backToTopButton" class="backToTopButton" title="Go to top">Top</button>
 
-<!-- Footer -->
-<section class="footer" id="footer">
+    <!-- Login Form -->
+    <div class="login-form-container">
 
-    <div class="box-container">
+        <span id="close-login-form" class="fas fa-times"></span>
 
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="index.html#home"> <i class="fas fa-arrow-right"></i> home </a>
-           <a href="index.html#vehicles"> <i class="fas fa-arrow-right"></i> popular </a>
-           <a href="index.html#reviews"> <i class="fas fa-arrow-right"></i> reviews </a>
-           <a href="index.html#contact"> <i class="fas fa-arrow-right"></i> contact </a>
-           <a href="explore.html"> <i class="fas fa-arrow-right"></i> explore </a>
-           <a href="index.html#aboutUs"> <i class="fas fa-arrow-right"></i> About Us </a>
-           <a href="salesRepresentatives.html"> <i class="fas fa-arrow-right"></i> Representatives </a>
-       </div>
- 
-       <div class="box">
-           <h3>contact us!</h3>
-           <a href="#"> <i class="fas fa-phone"></i> +248-489-3455</a>
-           <a href="mailto:FarmingtonHSBPA@gmail.com"> <i class="fas fa-envelope"></i> FarmingtonHSBPA@gmail.com  </a>
-           <a href="https://maps.google.com/maps?q=farminton+high+school,Farmington"> <i class="fas fa-map-marker-alt"></i> 32000 Shiawassee St, Farmington, MI 48336 </a>
-       </div>
- 
-       <div class="box">
-           <h3>Socials</h3>
-           <a href="https://www.facebook.com/michiganbpa/"> <i class="fab fa-facebook-f"></i> facebook </a>
-           <a href="https://twitter.com/MichiganBPA"> <i class="fab fa-twitter"></i> twitter </a>
-           <a href="https://www.instagram.com/farmington_bpa/"> <i class="fab fa-instagram"></i> instagram </a>
-
-        </div>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <p> forgot your password? <a href="#">click here</a> </p>
+            <input type="submit" value="login" class="btn">
+            <p>or login with:</p>
+            <div class="buttons">
+                <a href="#" class="btn"> google </a>
+                <a href="#" class="btn"> facebook </a>
+            </div>
+            <p> don't have an account? <a href="#">create one</a> </p>
+        </form>
 
     </div>
 
-    <div class="theme">Theme:  Develop a website for a used car lot</div>
+    <!-- Filter Button -->
+    <section class="filter-btn" id="filter-btn">
+        <button class="btn" onclick="openSelection()">Filter Search</button>
+    </section>
 
-</section>
+    <!-- Filters Sidebar -->
+    <div id="selectionSB" class="selectionSB">
+        <div class="header">
+            <a href="javascript:void(0)" class="close" onclick="closeSelection()">&#10005;</a>
+            <h2>Filters</h2>
+        </div>
 
-<!-- Import JavaScript -->
-<script src="js/filter.js"></script>
-<script src="js/script.js"></script>
-<script src="js/backToTop.js"></script>
+        <nav class="slideOne">
 
-<!-- In Document Script -->
-<script>
-    function transmisson(id) {
-        let green = "#002517";
-        let slate = "#35605A";
-        const classes = ["typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption", "colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption", "transAll", "automatic", "manual"];
-        for (let i = 0; i < classes.length; i++) {
-            document.getElementById(classes[i]).style.background = green;
+            <label for="c"><span>Color</span></label>
+            <input type="checkbox" id="c">
+
+            <ul class="slide color">
+                <li onclick="setColor(0)"><a href="#">White</li>
+                <li onclick="setColor(1)"><a href="#">Silver</a></li>
+                <li onclick="setColor(2)"><a href="#">Red</a></li>
+                <li onclick="setColor(3)"><a href="#">Gray</a></li>
+                <li onclick="setColor(4)"><a href="#">Blue</a></li>
+                <li onclick="setColor(5)"><a href="#">Green</a></li>
+                <li onclick="setColor(6)"><a href="#">Black</a></li>
+            </ul>
+
+        </nav>
+
+        <nav>
+
+            <label for="t"><span>Type</span></label>
+            <input type="checkbox" id="t">
+
+            <ul class="slide type">
+                <li onclick="setType(0)"><a href="#">Pickup</a></li>
+                <li onclick="setType(1)"><a href="#">SUV</a></li>
+                <li onclick="setType(2)"><a href="#">Coupe</a></li>
+                <li onclick="setType(3)"><a href="#">Convertible</a></li>
+                <li onclick="setType(4)"><a href="#">Hatchback</a></li>
+            </ul>
+
+        </nav>
+
+        <nav>
+
+            <label for="tr"><span>Transmission</span></label>
+            <input type="checkbox" id="tr">
+
+            <ul class="slide type">
+                <li onclick="setTransmission(0)"><a href="#">Automatic</a></li>
+                <li onclick="setTransmission(1)"><a href="#">Manual</a></li>
+                <li onclick="setTransmission(2)"><a href="#">Single-Speed</a></li>
+            </ul>
+
+        </nav>
+
+        <nav>
+
+            <label for="d"><span>Drivetrain</span></label>
+            <input type="checkbox" id="d">
+
+            <ul class="slide type">
+                <li onclick="setDrivetrain(0)"><a href="#">RWD</a></li>
+                <li onclick="setDrivetrain(1)"><a href="#">AWD</a></li>
+                <li onclick="setDrivetrain(2)"><a href="#">4WD</a></li>
+                <li onclick="setDrivetrain(3)"><a href="#">FWD</a></li>
+            </ul>
+
+        </nav>
+
+        <nav>
+
+            <label for="f"><span>Fuel Type</span></label>
+            <input type="checkbox" id="f">
+
+            <ul class="slide type">
+                <li onclick="setFuel(0)"><a href="#">Electric</a></li>
+                <li onclick="setFuel(1)"><a href="#">Gasoline</a></li>
+            </ul>
+
+        </nav>
+
+        <button class="btn" onclick="clearSelection()">Clear Selection</button>
+
+    </div>
+
+    <!-- Car listings -->
+    <section class="listings" id="listings">
+
+        <div class="row">
+
+            <div id="slide1" class="box column red crossover automatic">
+                <img src="image/cars/1.png" alt="">
+                <div class="content">
+                    <h3>Ford F-150 XL</h3>
+                    <div class="price"> <span>price : </span> $25,700/- </div>
+                    <p>
+                        2021 -
+                        Automatic -
+                        17,650 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide2" class="box column gray car automatic">
+                <img src="image/cars/2.png" alt="">
+                <div class="content">
+                    <h3>Chevrolet Silverado LTZ</h3>
+                    <div class="price"> <span>price : </span> $27,600/- </div>
+                    <p>
+                        2021 -
+                        Automatic -
+                        25,670 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide3" class="box column white crossover automatic">
+                <img src="image/cars/3.png" alt="">
+                <div class="content">
+                    <h3>Jeep Wrangler Sport</h3>
+                    <div class="price"> <span>price : </span> $35,230/- </div>
+                    <p>
+                        2021 -
+                        Automatic -
+                        29,700 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide4" class="box column blue convertible manual">
+                <img src="image/cars/4.png" alt="">
+                <div class="content">
+                    <h3>Audi RS5 Sportback</h3>
+                    <div class="price"> <span>price : </span>$58,930/- </div>
+                    <p>
+                        2021 -
+                        Automatic -
+                        67,950 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide5" class="box column orange car automatic">
+                <img src="image/cars/5.png" alt="">
+                <div class="content">
+                    <h3>Audi RS5 Sportback Coupe</h3>
+                    <div class="price"> <span>price : </span> $54,670/- </div>
+                    <p>
+                        2022 -
+                        Automatic -
+                        63,370 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide6" class="box column blue crossover automatic">
+                <img src="image/cars/6.png" alt="">
+                <div class="content">
+                    <h3>BMW M4 Competition</h3>
+                    <div class="price"> <span>price : </span> $62,789/- </div>
+                    <p>
+                        2022 -
+                        Automatic -
+                        58,760 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide7" class="box column white crossover automatic">
+                <img src="image/cars/7.png" alt="">
+                <div class="content">
+                    <h3>Hyundai Santa Fe SE</h3>
+                    <div class="price"> <span>price : </span> $15,639 </div>
+                    <p>
+                        2019 -
+                        Automatic -
+                        27,690 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide8" class="box column gray sportsCar manual">
+                <img src="image/cars/8.png" alt="">
+                <div class="content">
+                    <h3>Subaru Outback Limited</h3>
+                    <div class="price"> <span>price : </span> $17,859/- </div>
+                    <p>
+                        2020 -
+                        Automatic -
+                        25,649 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide9" class="box column blue crossover automatic">
+                <img src="image/cars/9.png" alt="">
+                <div class="content">
+                    <h3>Mazda CX-5 Touring</h3>
+                    <div class="price"> <span>price : </span> $19,780/- </div>
+                    <p>
+                        2020 -
+                        Automatic -
+                        17,830 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide10" class="box column black sportsCar convertible manual">
+                <img src="image/cars/10.png" alt="">
+                <div class="content">
+                    <h3>BMW Z4 M40i</h3>
+                    <div class="price"> <span>price : </span> $58,991/- </div>
+                    <p>
+                        2022 -
+                        Manual -
+                        11,449 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide11" class="box column blue car automatic">
+                <img src="image/cars/11.png" alt="">
+                <div class="content">
+                    <h3>Ford Mustang GT Convertible</h3>
+                    <div class="price"> <span>price : </span> $43,105/- </div>
+                    <p>
+                        2022 -
+                        Manual -
+                        670 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide12" class="box column gray crossover manual">
+                <img src="image/cars/12.png" alt="">
+                <div class="content">
+                    <h3>Porsche Boxster GTS</h3>
+                    <div class="price"> <span>price : </span> $89,999/- </div>
+                    <p>
+                        2022 -
+                        Manual -
+                        857 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide13" class="box column black other crossover automatic">
+                <img src="image/cars/13.png" alt="">
+                <div class="content">
+                    <h3>Jaguar I-PACE S</h3>
+                    <div class="price"> <span>price : </span>$84,239/- </div>
+                    <p>
+                        2022 -
+                        Automatic -
+                        523 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide14" class="box column yellow sportsCar manual">
+                <img src="image/cars/14.png" alt="">
+                <div class="content">
+                    <h3>Tesla Model S Long Range</h3>
+                    <div class="price"> <span>price : </span> $45,999/- </div>
+                    <p>
+                        2022 -
+                        Automatic -
+                        12,849 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide15" class="box column white sportsCar manual">
+                <img src="image/cars/15.png" alt="">
+                <div class="content">
+                    <h3>Nissan Leaf SV</h3>
+                    <div class="price"> <span>price : </span> $16,789/- </div>
+                    <p>
+                        2021 -
+                        Automatic -
+                        32,789 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide16" class="box column red other truck automatic">
+                <img src="image/cars/16.png" alt="">
+                <div class="content">
+                    <h3>BMW i3 Rex</h3>
+                    <div class="price"> <span>price : </span> $24,567/- </div>
+                    <p>
+                        2021 -
+                        Single Speed -
+                        38,769 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide17" class="box column gray car sportsCar automatic">
+                <img src="image/cars/17.png" alt="">
+                <div class="content">
+                    <h3>Chevrolet Bolt Premier</h3>
+                    <div class="price"> <span>price : </span> $15,789/- </div>
+                    <p>
+                        2022 -
+                        Single Speed -
+                        26,780 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+            <div id="slide18" class="box column white truck automatic">
+                <img src="image/cars/18.png" alt="">
+                <div class="content">
+                    <h3>Audi e-tron Premium Plus</h3>
+                    <div class="price"> <span>price : </span> $47,896/- </div>
+                    <p>
+                        2022 -
+                        Single Speed -
+                        67,860 miles
+                    </p>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <section class="footer" id="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#contact"> <i class="fas fa-arrow-right"></i> contact us</a>
+                <a href="explore.html"> <i class="fas fa-arrow-right"></i> explore </a>
+                <a href="salesRepresentatives.html"> <i class="fas fa-arrow-right"></i> Representatives </a>
+            </div>
+
+            <div class="box">
+                <h3>contact us!</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +248-489-3455</a>
+                <a href="mailto:FarmingtonHSBPA@gmail.com"> <i class="fas fa-envelope"></i> FarmingtonHSBPA@gmail.com
+                </a>
+                <a href="https://maps.google.com/maps?q=farminton+high+school,Farmington"> <i
+                        class="fas fa-map-marker-alt"></i> 32000 Shiawassee St, Farmington, MI 48336 </a>
+            </div>
+
+            <div class="box">
+                <h3>Socials</h3>
+                <a href="https://www.facebook.com/michiganbpa/"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="https://twitter.com/MichiganBPA"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="https://www.instagram.com/farmington_bpa/"> <i class="fab fa-instagram"></i> instagram </a>
+
+            </div>
+
+        </div>
+
+        <div class="theme">Theme: Develop a website for a used car lot</div>
+
+    </section>
+
+    <!-- Import JavaScript -->
+    <script src="js/filter.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/backToTop.js"></script>
+
+    <!-- In Document Script -->
+    <script>
+        function openSelection() {
+            document.getElementById("selectionSB").style.width = "350px";
+
         }
-        document.getElementById(id).style.background = slate;
-        document.getElementById('colorAll').style.background = slate;
-        document.getElementById('typeAll').style.background = slate;
-    }
 
-    function carType(id) {
-        let green = "#002517";
-        let slate = "#35605A";
-        const classes = ["typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption", "colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption", "transAll", "automatic", "manual"];
-        for (let i = 0; i < classes.length; i++) {
-            document.getElementById(classes[i]).style.background = green;
-        }
-        document.getElementById(id).style.background = slate;
-        document.getElementById('colorAll').style.background = slate;
-        document.getElementById('transAll').style.background = slate;
-    }
+        function closeSelection() {
+            document.getElementById("selectionSB").style.width = "0";
 
-    function color(id) {
-        let green = "#002517";
-        let slate = "#35605A";
-        const classes = ["typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption", "colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption", "transAll", "automatic", "manual"];
-        for (let i = 0; i < classes.length; i++) {
-            document.getElementById(classes[i]).style.background = green;
         }
-        document.getElementById(id).style.background = slate;
-        document.getElementById('typeAll').style.background = slate;
-        document.getElementById('transAll').style.background = slate;
-    }
-</script>
+
+        function openCU() {
+            document.getElementById("contactsb").style.width = "350px";
+
+        }
+
+        function closeCU() {
+            document.getElementById("contactsb").style.width = "0";
+
+        }
+    </script>
+
+    <!-- filtering scripting -->
+    <script type="module">
+        import data from '../database.json' assert {type: 'json'};
+        var selections = ["", "", "", "", ""]; // color, type, transmission, drivetrain, fuel
+        var colors = ["White", "Silver", "Red", "Gray", "Blue", "Green", "Black"];
+        var types = ["Pickup", "Suv", "Coupe", "Convertible", "Hatchback"];
+        var transmissions = ["Automatic", "Manual", "Single-speed"];
+        var drivetrains = ["RWD", "AWD", "4WD", "FWD"];
+        var fuels = ["Electric", "Gas"];
+
+        window.setColor = (input) => {
+            selections[0] = colors[input];
+            search();
+        }
+
+        window.setType = (input) => {
+            selections[1] = types[input];
+            search();
+        }
+
+        window.setTransmission = (input) => {
+            selections[2] = transmissions[input];
+            search();
+        }
+
+        window.setDrivetrain = (input) => {
+            selections[3] = drivetrains[input];
+            search();
+        }
+
+        window.setFuel = (input) => {
+            selections[4] = fuels[input];
+            search();
+        }
+
+        window.clearSelection = () => {
+            for (var i = 0; i < selections.length; i++) {
+                selections[i] = "";
+            }
+            search();
+        }
+
+        window.hideAllSlides = () => {
+            var ids = ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7', 'slide8', 'slide9', 'slide10', 'slide11', 'slide12', 'slide13', 'slide14', 'slide15', 'slide16', 'slide17', 'slide18'];
+
+            ids.forEach(function(id) {
+                document.getElementById(id).style.display = "none";
+            });
+        }
+
+        window.search = () => {
+            var matches = [];
+            var indexToTag = {
+                "1": "slide1",
+                "2": "slide2",
+                "3": "slide3",
+                "4": "slide4",
+                "5": "slide5",
+                "6": "slide6",
+                "7": "slide7",
+                "8": "slide8",
+                "9": "slide9",
+                "10": "slide10",
+                "11": "slide11",
+                "12": "slide12",
+                "13": "slide13",
+                "14": "slide14",
+                "15": "slide15",
+                "16": "slide16",
+                "17": "slide17",
+                "18": "slide18"
+            }
+
+            for (var i = 0; i < data.length; i++) {
+                var selectionsMatched = 0;
+                for (var j = 0; j < selections.length; j++) {
+                    if (selections[j] == '') {
+                        selectionsMatched++;
+                    } else if (data[i].color == selections[j]) {
+                        selectionsMatched++;
+                    } else if (data[i].category == selections[j]) {
+                        selectionsMatched++;
+                    } else if (data[i].transmission == selections[j]) {
+                        selectionsMatched++;
+                    } else if (data[i].driveTrain == selections[j]) {
+                        selectionsMatched++;
+                    } else if (data[i].engineType == selections[j]) {
+                        selectionsMatched++;
+                    }
+                }
+                if (selectionsMatched == 5) {
+                    matches.push(i + 1);
+                }
+            }
+
+            hideAllSlides();
+
+            var indexToShow = [];
+
+            for(var i = 0; i < matches.length; i++) {
+                indexToShow.push(indexToTag[matches[i]]);
+            }
+
+            indexToShow.forEach(function(index) {
+                document.getElementById(index).style.display = "block";
+            });
+        }
+    </script>
 
 </body>
+
 </html>
