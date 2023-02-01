@@ -453,6 +453,8 @@
 
         </div>
 
+        <h1 id="noResults">No Results Found...</h1>
+
     </section>
 
     <!-- Footer -->
@@ -492,7 +494,6 @@
     </section>
 
     <!-- Import JavaScript -->
-    <script src="js/filter.js"></script>
     <script src="js/script.js"></script>
     <script src="js/backToTop.js"></script>
 
@@ -637,6 +638,12 @@
             indexToShow.forEach(function(index) {
                 document.getElementById(index).style.display = "block";
             });
+
+            if (indexToShow.length > 0) {
+                document.getElementById("noResults").style.display = "none";
+            } else {
+                document.getElementById("noResults").style.display = "block";
+            }
         }
     </script>
 

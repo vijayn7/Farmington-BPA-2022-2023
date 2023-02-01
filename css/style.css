@@ -956,6 +956,17 @@ section {
     padding: 0 .5rem;
 }
 
+.listings #noResults {
+    display: none;
+    font-size: 7rem;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    color: var(--green);
+    margin-top: 5rem;
+    margin-bottom: 21rem ;
+}
+
 .carInfo {
     background-color: #eee;
     padding-top: 15rem;
