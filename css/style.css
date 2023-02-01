@@ -1098,6 +1098,11 @@ section {
     border: .3rem solid #002517;
 }
 
+.contact{
+    padding-top: 10rem;
+
+}
+
 .contact .row {
     display: flex;
     flex-wrap: wrap;
