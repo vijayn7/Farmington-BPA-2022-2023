@@ -108,118 +108,6 @@
 
     </div>
 
-    <!-- Filter selector -->
-    <!-- <section class="selection" id="selection" style="margin-top: 100px;">
-        <div class="row">
-            <div id="filters">
-                <h3>Color:</h3>
-                <div data-toggle="buttons">
-
-                    <label style="background: #35605A;" id="colorAll" class="btn active">
-                        <input type="radio" name="color" value="all" onclick="color('colorAll')">
-                        Show all
-                    </label>
-
-                    <label id="redOption" class="btn">
-                        <input type="radio" name="color" value="red" onclick="color('redOption')">
-                        Red
-                    </label>
-
-                    <label id="whiteOption" class="btn">
-                        <input type="radio" name="color" value="white" onclick="color('whiteOption')">
-                        White
-                    </label>
-
-                    <label id="blueOption" class="btn">
-                        <input type="radio" name="color" value="blue" onclick="color('blueOption')">
-                        Blue
-                    </label>
-
-                    <label id="orangeOption" class="btn">
-                        <input type="radio" name="color" value="orange" onclick="color('orangeOption')">
-                        Orange
-                    </label>
-
-                    <label id="grayOption" class="btn">
-                        <input type="radio" name="color" value="gray" onclick="color('grayOption')">
-                        Gray
-                    </label>
-
-                    <label id="blackOption" class="btn">
-                        <input type="radio" name="color" value="black" onclick="color('blackOption')">
-                        Black
-                    </label>
-
-                    <label id="yellowOption" class="btn">
-                        <input type="radio" name="color" value="yellow" onclick="color('yellowOption')">
-                        yellow
-                    </label>
-
-                </div>
-
-                <h3>Type:</h3>
-                <div data-toggle="buttons">
-
-                    <label id="typeAll" class="btn active" id="typeAll" style="background-color: #35605A;">
-                        <input type="radio" name="color" value="all" onclick="carType('typeAll')">
-                        Show all
-                    </label>
-
-                    <label id="sportsCarOption" class="btn">
-                        <input type="radio" name="color" value="sportsCar" onclick="carType('sportsCarOption')">
-                        Sports Cars
-                    </label>
-
-                    <label id="carOption" class="btn">
-                        <input type="radio" name="color" value="car" onclick="carType('carOption')">
-                        Cars
-                    </label>
-
-                    <label id="crossoverOption" class="btn">
-                        <input type="radio" name="color" value="crossover" onclick="carType('crossoverOption')">
-                        Crossovers
-                    </label>
-
-                    <label id="truckOption" class="btn">
-                        <input type="radio" name="color" value="truck" onclick="carType('truckOption')">
-                        Trucks
-                    </label>
-
-                    <label id="convertibleOption" class="btn">
-                        <input type="radio" name="color" value="convertible" onclick="carType('convertibleOption')">
-                        Convertibles
-                    </label>
-
-                    <label id="otherOption" class="btn">
-                        <input type="radio" name="color" value="other" onclick="carType('otherOption')">
-                        Other
-                    </label>
-
-                </div>
-
-                <h3>Transmisson:</h3>
-                <div data-toggle="buttons">
-
-                    <label id="transAll" class="btn active" id="transAll" style="background-color: #35605A;">
-                        <input type="radio" name="color" value="all" onclick="transmisson('transAll')">
-                        Show all
-                    </label>
-
-                    <label id="automatic" class="btn">
-                        <input type="radio" name="color" value="automatic" onclick="transmisson('automatic')">
-                        Automatic
-                    </label>
-
-                    <label id="manual" class="btn">
-                        <input type="radio" name="color" value="manual" onclick="transmisson('manual')">
-                        Manual
-                    </label>
-
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <button class="wwdsa btn" onclick="openSelection()">w</button>
 
     <div id="selectionSB" class="selectionSB">
@@ -299,7 +187,6 @@
 
         </nav>
 
-        <div id="apply" onclick="search()"><input type="button" value="Apply Selection" class="btn"></div>
         <button class="btn" onclick="clearSelection()">Clear Selection</button>
 
     </div>
@@ -315,35 +202,67 @@
 
         window.setColor = (input) => {
             selections[0] = colors[input];
+            search();
         }
 
         window.setType = (input) => {
             selections[1] = types[input];
+            search();
         }
 
         window.setTransmission = (input) => {
             selections[2] = transmissions[input];
+            search();
         }
 
         window.setDrivetrain = (input) => {
             selections[3] = drivetrains[input];
+            search();
         }
 
         window.setFuel = (input) => {
             selections[4] = fuels[input];
+            search();
         }
 
         window.clearSelection = () => {
             for (var i = 0; i < selections.length; i++) {
                 selections[i] = "";
             }
+            search();
+        }
+
+        window.hideAllSlides = () => {
+            var ids = ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7', 'slide8', 'slide9', 'slide10', 'slide11', 'slide12', 'slide13', 'slide14', 'slide15', 'slide16', 'slide17', 'slide18'];
+
+            ids.forEach(function(id) {
+                document.getElementById(id).style.display = "none";
+            });
         }
 
         window.search = () => {
             var matches = [];
             var indexToTag = {
-                "1": "w",
+                "1": "slide1",
+                "2": "slide2",
+                "3": "slide3",
+                "4": "slide4",
+                "5": "slide5",
+                "6": "slide6",
+                "7": "slide7",
+                "8": "slide8",
+                "9": "slide9",
+                "10": "slide10",
+                "11": "slide11",
+                "12": "slide12",
+                "13": "slide13",
+                "14": "slide14",
+                "15": "slide15",
+                "16": "slide16",
+                "17": "slide17",
+                "18": "slide18"
             }
+
             for (var i = 0; i < data.length; i++) {
                 var selectionsMatched = 0;
                 for (var j = 0; j < selections.length; j++) {
@@ -365,6 +284,18 @@
                     matches.push(i + 1);
                 }
             }
+
+            hideAllSlides();
+
+            var indexToShow = [];
+
+            for(var i = 0; i < matches.length; i++) {
+                indexToShow.push(indexToTag[matches[i]]);
+            }
+
+            indexToShow.forEach(function(index) {
+                document.getElementById(index).style.display = "block";
+            });
         }
     </script>
 
@@ -415,7 +346,7 @@
                 </div>
             </div>
 
-            <div id="slide5" class="box column blue convertible manual">
+            <div id="slide4" class="box column blue convertible manual">
                 <img src="image/cars/4.png" alt="">
                 <div class="content">
                     <h3>Mercedes Benz SL-Class</h3>
@@ -672,42 +603,6 @@
 
     <!-- In Document Script -->
     <script>
-        function transmisson(id) {
-            let green = "#002517";
-            let slate = "#35605A";
-            const classes = ["typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption", "colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption", "transAll", "automatic", "manual"];
-            for (let i = 0; i < classes.length; i++) {
-                document.getElementById(classes[i]).style.background = green;
-            }
-            document.getElementById(id).style.background = slate;
-            document.getElementById('colorAll').style.background = slate;
-            document.getElementById('typeAll').style.background = slate;
-        }
-
-        function carType(id) {
-            let green = "#002517";
-            let slate = "#35605A";
-            const classes = ["typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption", "colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption", "transAll", "automatic", "manual"];
-            for (let i = 0; i < classes.length; i++) {
-                document.getElementById(classes[i]).style.background = green;
-            }
-            document.getElementById(id).style.background = slate;
-            document.getElementById('colorAll').style.background = slate;
-            document.getElementById('transAll').style.background = slate;
-        }
-
-        function color(id) {
-            let green = "#002517";
-            let slate = "#35605A";
-            const classes = ["typeAll", "sportsCarOption", "carOption", "crossoverOption", "truckOption", "convertibleOption", "otherOption", "colorAll", "redOption", "whiteOption", "blueOption", "orangeOption", "grayOption", "blackOption", "yellowOption", "transAll", "automatic", "manual"];
-            for (let i = 0; i < classes.length; i++) {
-                document.getElementById(classes[i]).style.background = green;
-            }
-            document.getElementById(id).style.background = slate;
-            document.getElementById('typeAll').style.background = slate;
-            document.getElementById('transAll').style.background = slate;
-        }
-
         function openSelection() {
             document.getElementById("selectionSB").style.width = "350px";
 
