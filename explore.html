@@ -191,114 +191,6 @@
 
     </div>
 
-    <script type="module">
-        import data from '../database.json' assert {type: 'json'};
-        var selections = ["", "", "", "", ""]; // color, type, transmission, drivetrain, fuel
-        var colors = ["White", "Silver", "Red", "Gray", "Blue", "Green", "Black"];
-        var types = ["Pickup", "Suv", "Coupe", "Convertible", "Hatchback"];
-        var transmissions = ["Automatic", "Manual", "Single-speed"];
-        var drivetrains = ["RWD", "AWD", "4WD", "FWD"];
-        var fuels = ["Electric", "Gas"];
-
-        window.setColor = (input) => {
-            selections[0] = colors[input];
-            search();
-        }
-
-        window.setType = (input) => {
-            selections[1] = types[input];
-            search();
-        }
-
-        window.setTransmission = (input) => {
-            selections[2] = transmissions[input];
-            search();
-        }
-
-        window.setDrivetrain = (input) => {
-            selections[3] = drivetrains[input];
-            search();
-        }
-
-        window.setFuel = (input) => {
-            selections[4] = fuels[input];
-            search();
-        }
-
-        window.clearSelection = () => {
-            for (var i = 0; i < selections.length; i++) {
-                selections[i] = "";
-            }
-            search();
-        }
-
-        window.hideAllSlides = () => {
-            var ids = ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7', 'slide8', 'slide9', 'slide10', 'slide11', 'slide12', 'slide13', 'slide14', 'slide15', 'slide16', 'slide17', 'slide18'];
-
-            ids.forEach(function(id) {
-                document.getElementById(id).style.display = "none";
-            });
-        }
-
-        window.search = () => {
-            var matches = [];
-            var indexToTag = {
-                "1": "slide1",
-                "2": "slide2",
-                "3": "slide3",
-                "4": "slide4",
-                "5": "slide5",
-                "6": "slide6",
-                "7": "slide7",
-                "8": "slide8",
-                "9": "slide9",
-                "10": "slide10",
-                "11": "slide11",
-                "12": "slide12",
-                "13": "slide13",
-                "14": "slide14",
-                "15": "slide15",
-                "16": "slide16",
-                "17": "slide17",
-                "18": "slide18"
-            }
-
-            for (var i = 0; i < data.length; i++) {
-                var selectionsMatched = 0;
-                for (var j = 0; j < selections.length; j++) {
-                    if (selections[j] == '') {
-                        selectionsMatched++;
-                    } else if (data[i].color == selections[j]) {
-                        selectionsMatched++;
-                    } else if (data[i].category == selections[j]) {
-                        selectionsMatched++;
-                    } else if (data[i].transmission == selections[j]) {
-                        selectionsMatched++;
-                    } else if (data[i].driveTrain == selections[j]) {
-                        selectionsMatched++;
-                    } else if (data[i].engineType == selections[j]) {
-                        selectionsMatched++;
-                    }
-                }
-                if (selectionsMatched == 5) {
-                    matches.push(i + 1);
-                }
-            }
-
-            hideAllSlides();
-
-            var indexToShow = [];
-
-            for(var i = 0; i < matches.length; i++) {
-                indexToShow.push(indexToTag[matches[i]]);
-            }
-
-            indexToShow.forEach(function(index) {
-                document.getElementById(index).style.display = "block";
-            });
-        }
-    </script>
-
     <!-- Car listings -->
     <section class="listings" id="listings">
 
@@ -621,6 +513,115 @@
         function closeCU() {
             document.getElementById("contactsb").style.width = "0";
 
+        }
+    </script>
+
+    <!-- filtering scripting -->
+    <script type="module">
+        import data from '../database.json' assert {type: 'json'};
+        var selections = ["", "", "", "", ""]; // color, type, transmission, drivetrain, fuel
+        var colors = ["White", "Silver", "Red", "Gray", "Blue", "Green", "Black"];
+        var types = ["Pickup", "Suv", "Coupe", "Convertible", "Hatchback"];
+        var transmissions = ["Automatic", "Manual", "Single-speed"];
+        var drivetrains = ["RWD", "AWD", "4WD", "FWD"];
+        var fuels = ["Electric", "Gas"];
+
+        window.setColor = (input) => {
+            selections[0] = colors[input];
+            search();
+        }
+
+        window.setType = (input) => {
+            selections[1] = types[input];
+            search();
+        }
+
+        window.setTransmission = (input) => {
+            selections[2] = transmissions[input];
+            search();
+        }
+
+        window.setDrivetrain = (input) => {
+            selections[3] = drivetrains[input];
+            search();
+        }
+
+        window.setFuel = (input) => {
+            selections[4] = fuels[input];
+            search();
+        }
+
+        window.clearSelection = () => {
+            for (var i = 0; i < selections.length; i++) {
+                selections[i] = "";
+            }
+            search();
+        }
+
+        window.hideAllSlides = () => {
+            var ids = ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7', 'slide8', 'slide9', 'slide10', 'slide11', 'slide12', 'slide13', 'slide14', 'slide15', 'slide16', 'slide17', 'slide18'];
+
+            ids.forEach(function(id) {
+                document.getElementById(id).style.display = "none";
+            });
+        }
+
+        window.search = () => {
+            var matches = [];
+            var indexToTag = {
+                "1": "slide1",
+                "2": "slide2",
+                "3": "slide3",
+                "4": "slide4",
+                "5": "slide5",
+                "6": "slide6",
+                "7": "slide7",
+                "8": "slide8",
+                "9": "slide9",
+                "10": "slide10",
+                "11": "slide11",
+                "12": "slide12",
+                "13": "slide13",
+                "14": "slide14",
+                "15": "slide15",
+                "16": "slide16",
+                "17": "slide17",
+                "18": "slide18"
+            }
+
+            for (var i = 0; i < data.length; i++) {
+                var selectionsMatched = 0;
+                for (var j = 0; j < selections.length; j++) {
+                    if (selections[j] == '') {
+                        selectionsMatched++;
+                    } else if (data[i].color == selections[j]) {
+                        selectionsMatched++;
+                    } else if (data[i].category == selections[j]) {
+                        selectionsMatched++;
+                    } else if (data[i].transmission == selections[j]) {
+                        selectionsMatched++;
+                    } else if (data[i].driveTrain == selections[j]) {
+                        selectionsMatched++;
+                    } else if (data[i].engineType == selections[j]) {
+                        selectionsMatched++;
+                    }
+                }
+                if (selectionsMatched == 5) {
+                    matches.push(i + 1);
+                }
+            }
+
+            hideAllSlides();
+
+            var indexToShow = [];
+
+            for(var i = 0; i < matches.length; i++) {
+                indexToShow.push(indexToTag[matches[i]]);
+            }
+
+            indexToShow.forEach(function(index) {
+                document.getElementById(index).style.display = "block";
+            });
         }
     </script>
 
