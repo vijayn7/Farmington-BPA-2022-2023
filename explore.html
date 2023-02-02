@@ -121,7 +121,7 @@
 
         <nav class="slideOne">
 
-            <label for="c"><span>Color</span></label>
+            <label for="c"><span id="colorTab">Color</span></label>
             <input type="checkbox" id="c">
 
             <ul class="slide color">
@@ -138,7 +138,7 @@
 
         <nav>
 
-            <label for="t"><span>Type</span></label>
+            <label for="t"><span id="typeTab">Type</span></label>
             <input type="checkbox" id="t">
 
             <ul class="slide type">
@@ -153,7 +153,7 @@
 
         <nav>
 
-            <label for="tr"><span>Transmission</span></label>
+            <label for="tr"><span id="transmissionTab">Transmission</span></label>
             <input type="checkbox" id="tr">
 
             <ul class="slide type">
@@ -166,7 +166,7 @@
 
         <nav>
 
-            <label for="d"><span>Drivetrain</span></label>
+            <label for="d"><span id="drivetrainTab">Drivetrain</span></label>
             <input type="checkbox" id="d">
 
             <ul class="slide type">
@@ -180,7 +180,7 @@
 
         <nav>
 
-            <label for="f"><span>Fuel Type</span></label>
+            <label for="f"><span id="fuelTab">Fuel Type</span></label>
             <input type="checkbox" id="f">
 
             <ul class="slide type">
@@ -209,7 +209,7 @@
                         Automatic -
                         17,650 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(1)">check out</a>
                 </div>
             </div>
 
@@ -223,7 +223,7 @@
                         Automatic -
                         25,670 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(2)">check out</a>
                 </div>
             </div>
 
@@ -237,7 +237,7 @@
                         Automatic -
                         29,700 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(3)">check out</a>
                 </div>
             </div>
 
@@ -251,7 +251,7 @@
                         Automatic -
                         67,950 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(4)">check out</a>
                 </div>
             </div>
 
@@ -265,7 +265,7 @@
                         Automatic -
                         63,370 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(5)">check out</a>
                 </div>
             </div>
 
@@ -279,7 +279,7 @@
                         Automatic -
                         58,760 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(6)">check out</a>
                 </div>
             </div>
 
@@ -293,7 +293,7 @@
                         Automatic -
                         27,690 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(7)">check out</a>
                 </div>
             </div>
 
@@ -307,7 +307,7 @@
                         Automatic -
                         25,649 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(8)">check out</a>
                 </div>
             </div>
 
@@ -321,7 +321,7 @@
                         Automatic -
                         17,830 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(9)">check out</a>
                 </div>
             </div>
 
@@ -335,7 +335,7 @@
                         Manual -
                         11,449 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(10)">check out</a>
                 </div>
             </div>
 
@@ -349,7 +349,7 @@
                         Manual -
                         670 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(11)">check out</a>
                 </div>
             </div>
 
@@ -363,7 +363,7 @@
                         Manual -
                         857 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(12)">check out</a>
                 </div>
             </div>
 
@@ -377,7 +377,7 @@
                         Automatic -
                         523 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(13)">check out</a>
                 </div>
             </div>
 
@@ -391,7 +391,7 @@
                         Automatic -
                         12,849 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(14)">check out</a>
                 </div>
             </div>
 
@@ -405,7 +405,7 @@
                         Automatic -
                         32,789 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(15)">check out</a>
                 </div>
             </div>
 
@@ -419,7 +419,7 @@
                         Single Speed -
                         38,769 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(16)">check out</a>
                 </div>
             </div>
 
@@ -433,7 +433,7 @@
                         Single Speed -
                         26,780 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(17)">check out</a>
                 </div>
             </div>
 
@@ -447,11 +447,13 @@
                         Single Speed -
                         67,860 miles
                     </p>
-                    <a href="#" class="btn">check out</a>
+                    <a href="#" class="btn" onclick="go(18)">check out</a>
                 </div>
             </div>
 
         </div>
+
+        <h1 id="noResults">No Results Found...</h1>
 
     </section>
 
@@ -492,7 +494,6 @@
     </section>
 
     <!-- Import JavaScript -->
-    <script src="js/filter.js"></script>
     <script src="js/script.js"></script>
     <script src="js/backToTop.js"></script>
 
@@ -517,6 +518,14 @@
             document.getElementById("contactsb").style.width = "0";
 
         }
+
+        function go(index) {
+            var params = new URLSearchParams();
+            params.append("index", index);
+
+            var url = "/carinfo.html?" + params.toString();
+            location.href = url;
+        }
     </script>
 
     <!-- filtering scripting -->
@@ -532,26 +541,31 @@
         window.setColor = (input) => {
             selections[0] = colors[input];
             search();
+            document.getElementById("colorTab").innerText = colors[input];
         }
 
         window.setType = (input) => {
             selections[1] = types[input];
             search();
+            document.getElementById("typeTab").innerText = types[input];
         }
 
         window.setTransmission = (input) => {
             selections[2] = transmissions[input];
             search();
+            document.getElementById("transmissionTab").innerText = transmissions[input];
         }
 
         window.setDrivetrain = (input) => {
             selections[3] = drivetrains[input];
             search();
+            document.getElementById("drivetrainTab").innerText = drivetrains[input];
         }
 
         window.setFuel = (input) => {
             selections[4] = fuels[input];
             search();
+            document.getElementById("fuelTab").innerText = fuels[input];
         }
 
         window.clearSelection = () => {
@@ -559,6 +573,13 @@
                 selections[i] = "";
             }
             search();
+
+            document.getElementById("colorTab").innerText = "Color";
+            document.getElementById("typeTab").innerText = "Type";
+            document.getElementById("transmissionTab").innerText = "Transmission";
+            document.getElementById("drivetrainTab").innerText = "Drivetrain";
+            document.getElementById("fuelTab").innerText = "Fuel Type";
+
         }
 
         window.hideAllSlides = () => {
@@ -625,6 +646,12 @@
             indexToShow.forEach(function(index) {
                 document.getElementById(index).style.display = "block";
             });
+
+            if (indexToShow.length > 0) {
+                document.getElementById("noResults").style.display = "none";
+            } else {
+                document.getElementById("noResults").style.display = "block";
+            }
         }
     </script>
 

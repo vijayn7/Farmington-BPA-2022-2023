@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com');
 
 :root {
-    --slate: #35605A;
+    --slate: #35605a;
     --green: #002517;
     --light-color: #666;
     --yellow: #E88321;
@@ -309,7 +309,6 @@ section {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1.9rem;
     color: #002517;
-
 }
 
 .contactsb .contactform {
@@ -660,82 +659,6 @@ section {
     background: var(--slate);
 }
 
-.slider {
-    width: 100vw;
-    height: 80vh;
-    position: relative;
-    color: white;
-}
-
-.slider .arrows {
-    text-align: center;
-    width: 50%;
-    margin: auto;
-}
-
-.slider .arrows .slider-button {
-    position: absolute;
-    z-index: 2;
-    background: none;
-    border: none;
-    font-size: 6rem;
-    top: 50%;
-    transform: translate(-50%);
-    color: white;
-    filter: invert(1);
-}
-
-.slider .arrows .slider-button.prev {
-    text-align: right;
-    left: 5%;
-}
-
-.slider .arrows .slider-button.next {
-    text-align: right;
-    right: 0%;
-}
-
-.slider .slide {
-    padding-top: 7%;
-    background-color: black;
-    inset: 0;
-    position: absolute;
-    background-image: url(/image/backgrounds/abstract1.jpeg);
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    min-width: 100%;
-}
-
-.slider .slide img {
-    padding-top: 10%rem;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin: auto;
-    width: 50%;
-}
-
-.slider .slide .name {
-    font-family: 'Unbounded', cursive;
-    font-size: 3rem;
-    margin: auto;
-    width: 80%;
-    text-align: center;
-    padding-top: 1rem;
-}
-
-.slider .slide .description {
-    font-family: 'Fira Code', monospace;
-    width: 45%;
-    margin: auto;
-}
-
-.slider .slide .description .slider-price {
-    padding-bottom: 3rem;
-}
-
 .vehicles .vehicles-slider {
     padding-bottom: 5rem;
 }
@@ -1033,6 +956,143 @@ section {
     padding: 0 .5rem;
 }
 
+.listings #noResults {
+    display: none;
+    font-size: 7rem;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    color: var(--green);
+    margin-top: 5rem;
+    margin-bottom: 21rem ;
+}
+
+.carInfo {
+    background-color: #eee;
+    padding-top: 15rem;
+
+}
+
+.carInfo .content {
+    background-color: #fff;
+}
+
+.carInfo .content .carTitle {
+    font-size: 4rem;
+    padding-top: 6rem;
+    padding-left: 5rem;
+    position: absolute;
+}
+
+.carInfo .content .carPrice {
+    font-size: 4rem;
+    padding-top: 6rem;
+    padding-left: 145rem;
+}
+
+.carInfo .content .carTitle2 {
+    font-size: 2rem;
+    padding-top: .75rem;
+    padding-left: 5.3rem;
+
+    position: relative;
+}
+
+.carInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+}
+
+.carInfo img {
+    padding-left: 23rem;
+
+}
+
+.carInfo .content {
+    background-color: #fff;
+    text-align: left;
+    padding-bottom: 5rem;
+    margin: auto;
+    width: 100%;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+}
+
+.carInfo .content .row .box h1 {
+    font-size: 2rem;
+
+}
+
+.carInfo .content .row .box .monthly {
+    margin-left: 1rem;
+    background-color: var(--green);
+}
+
+.carInfo .specs {
+    background-color: #fff;
+    text-align: left;
+    padding-bottom: 5rem;
+    margin: auto;
+    width: 100%;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+
+}
+
+.carInfo .specs .specsHeader {
+    font-size: 2.5rem;
+    padding-top: 6rem;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+
+}
+
+.carInfo .specs .tb {
+    column-count: 3;
+    position: relative;
+    padding-bottom: 6.5rem;
+
+}
+
+
+.carInfo .specs .tb h3 {
+    padding-top: 5rem;
+    padding-left: 7rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: rgb(75, 75, 75);
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+    width: 94%;
+    margin: auto;
+
+}
+
+
+.carInfo .specs .description {
+    font-size: 2.5rem;
+    padding-top: 5rem;
+    padding-left: 4.5rem;
+    padding-bottom: 2rem;
+}
+
+.carInfo .specs h3 {
+    padding-left: 4.5rem;
+    padding-right: 5rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.carInfo .specs hr {
+    margin-top: 3rem;
+}
+
 .representatives {
     background-color: #eee;
     padding-top: 15rem;
@@ -1102,7 +1162,7 @@ section {
     border: .3rem solid #002517;
 }
 
-.contact{
+.contact {
     padding-top: 10rem;
 
 }
