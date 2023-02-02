@@ -439,16 +439,23 @@ section {
 }
 
 .filter-btn {
-    background-color: #eee;
-    padding-top: 12rem;
-    width: 100%;
-    margin: auto;
-    text-align: center;
+    position: fixed;
+    padding-top: 14rem;
+    z-index: 2;
+    padding-left: 0rem;
+    
 }
 
 .filter-btn .btn {
-    width: 30%;
-    border-radius: 5rem;
+    position: fixed;
+    border-radius: 0px 2rem 2rem 0px;
+    width: 100px;
+    background-color:#002517
+    
+}
+
+.btn:hover {
+    background-color: #35605A;
 }
 
 .selectionSB {
@@ -460,7 +467,7 @@ section {
     background-color: #eee;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 8rem;
     z-index: 2;
     box-shadow: var(--box-shadow);
     justify-content: center;
@@ -470,6 +477,7 @@ section {
 
 .selectionSB button {
     margin-left: 25%;
+  
 }
 
 .selectionSB .header a {
@@ -897,7 +905,8 @@ section {
 
 .listings {
     background: #eee;
-    padding-bottom: 10rem;
+    padding-bottom: 28rem;
+    padding-top: 15rem;
 }
 
 .listings .row {
@@ -965,6 +974,7 @@ section {
     color: var(--green);
     margin-top: 5rem;
     margin-bottom: 21rem ;
+    padding-top: 15rem;
 }
 
 .carInfo {
