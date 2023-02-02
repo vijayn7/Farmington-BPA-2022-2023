@@ -508,10 +508,7 @@ section {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1.9rem;
     color: #002517;
-
 }
-
-/* w */
 
 .selectionSB nav {
     width: 90%;
@@ -602,8 +599,6 @@ section {
 .selectionSB #f:checked+.slide {
     height: 125px;
 }
-
-/* make this scale*/
 
 .newsletter {
     padding: 6rem 2rem;
@@ -1371,6 +1366,14 @@ hr.solid {
         font-size: 1.75rem;
     }
 
+    .contactsb .header .close {
+        top: -0.5rem;
+    }
+
+    .selectionSB .header .close {
+        top: -0.5rem;
+    }
+
 }
 
 @media (max-width:768px) {
@@ -1431,6 +1434,19 @@ hr.solid {
         font-size: 1.5rem;
     }
 
+    .carInfo .specs {
+        text-align: center;
+    }
+
+    .carInfo .specs .tb {
+        column-count: 1;
+        padding-bottom: 1.5rem;
+    }
+
+    .carInfo .specs .tb h3 {
+        padding-top: 2rem;
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width:450px) {
@@ -1469,5 +1485,19 @@ hr.solid {
     .carInfo .content .carTitle2 {
         font-size: 1rem;
         padding-top: .75rem;
+    }
+
+    .carInfo .specs {
+        text-align: center;
+    }
+
+    .carInfo .specs .tb {
+        column-count: 1;
+        padding-bottom: 1.5rem;
+    }
+
+    .carInfo .specs .tb h3 {
+        padding-top: 2rem;
+        font-size: 1.4rem;
     }
 }
