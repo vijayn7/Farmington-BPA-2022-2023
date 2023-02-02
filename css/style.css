@@ -990,21 +990,20 @@ section {
 .carInfo .content .carTitle {
     font-size: 4rem;
     padding-top: 6rem;
-    padding-left: 5rem;
+    padding-left: 3rem;
     position: absolute;
 }
 
 .carInfo .content .carPrice {
     font-size: 4rem;
     padding-top: 6rem;
-    padding-left: 145rem;
+    padding-left: 80%;
 }
 
 .carInfo .content .carTitle2 {
     font-size: 2rem;
     padding-top: .75rem;
-    padding-left: 5.3rem;
-
+    padding-left: 4rem;
     position: relative;
 }
 
@@ -1016,8 +1015,7 @@ section {
 }
 
 .carInfo img {
-    padding-left: 23rem;
-
+    margin-left: 12%;
 }
 
 .carInfo .content {
@@ -1066,7 +1064,6 @@ section {
 
 }
 
-
 .carInfo .specs .tb h3 {
     padding-top: 5rem;
     padding-left: 7rem;
@@ -1083,7 +1080,6 @@ hr.solid {
     margin: auto;
 
 }
-
 
 .carInfo .specs .description {
     font-size: 2.5rem;
@@ -1287,6 +1283,10 @@ hr.solid {
         height: 35rem;
         width: 80%;
     }
+
+    .carInfo .content .carPrice {
+    padding-left: 75%;
+}
 }
 
 @media (max-width:1464px) {
@@ -1303,6 +1303,14 @@ hr.solid {
     .representatives .representatives-slider .box img {
         height: 30rem;
         width: 80%;
+    }
+
+    .carInfo .content .carPrice {
+        font-size: 3rem;
+    }
+
+    .carInfo .content .carTitle {
+        font-size: 3rem;
     }
 }
 
@@ -1326,6 +1334,13 @@ hr.solid {
         font-size: 3.5rem;
     }
 
+    .carInfo .content .carPrice {
+        font-size: 2rem;
+    }
+
+    .carInfo .content .carTitle {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width:991px) {
@@ -1352,6 +1367,18 @@ hr.solid {
 
     .representatives .representatives-slider .box img {
         height: 30rem;
+    }
+
+    .carInfo .content .carPrice {
+        font-size: 2rem;
+    }
+
+    .carInfo .content .carTitle {
+        font-size: 2rem;
+    }
+
+    .carInfo .content .carTitle2 {
+        font-size: 1.75rem;
     }
 
 }
@@ -1402,6 +1429,18 @@ hr.solid {
         height: 60%;
     }
 
+    .carInfo .content .carPrice {
+        font-size: 1.75rem;
+    }
+
+    .carInfo .content .carTitle {
+        font-size: 1.75rem;
+    }
+
+    .carInfo .content .carTitle2 {
+        font-size: 1.5rem;
+    }
+
 }
 
 @media (max-width:450px) {
@@ -1425,5 +1464,20 @@ hr.solid {
     .representatives h1 {
         color: #ffffff;
         font-size: 5rem;
+    }
+
+    .carInfo .content .carPrice {
+        font-size: 1.25rem;
+        padding-top: 4rem;
+    }
+
+    .carInfo .content .carTitle {
+        font-size: 1.25rem;
+        padding-top: 4rem;
+    }
+
+    .carInfo .content .carTitle2 {
+        font-size: 1rem;
+        padding-top: .75rem;
     }
 }
