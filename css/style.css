@@ -1128,7 +1128,6 @@ hr.solid {
     margin: 2rem 0;
     opacity: .8;
     transform: scale(.9);
-    filter: blur(2px);
 }
 
 .representatives .representatives-slider .swiper-slide-active {
